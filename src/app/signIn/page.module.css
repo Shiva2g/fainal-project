@@ -1,0 +1,116 @@
+main {
+  padding:0 10%;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px 60px 60px;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  margin-bottom: 30px;
+  color: #0044ba;
+}
+.container h2{
+  margin: 30px 0;
+}
+.main-sign {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in-form {
+  width: 40%;
+}
+
+.benefits {
+  width: 45%;
+}
+
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input[type="password"]{
+  position: relative;
+}
+
+.show-password {
+  display: inline-block;
+  margin-left: -45px;
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #0044ba;
+  cursor: pointer;
+  position: absolute;
+  
+}
+
+.sign-in-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0044ba;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.forgot-password {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0044ba;
+}
+
+.benefits ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.benefits li {
+  margin-bottom: 15px;
+}
+
+.create-account {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0044ba;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+footer a {
+  color: #dfe5ef;
+  text-decoration: none;
+}

@@ -1,8 +1,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./page.module.css";
+import pageStyles from "./page.module.css";
+import headerStyles from "./components/Header/Header.module.css";
+import footerStyles from "./components/Footer/Footer.module.css";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -30,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="images/products/hero-img.png" alt="Hero" />
+            <Image src="/assets/images/products/hero-img.png" alt="Hero" />
           </div>
         </div>
         <div className="forward-button">
@@ -43,13 +46,13 @@ export default function Home() {
         <section className="deals-section">
           <div className="deals-title">
             <div className="vertical-line-icon">
-              <img src="images/icons/vertical_line.png" alt="Deals Icon" />
+              <Image src="images/icons/vertical_line.png" alt="Deals Icon" />
             </div>
             <div className="last-pro-text">
               <h2>Deals</h2>
             </div>
             <div className="vertical-line-icon">
-              <img src="images/icons/vertical_line.png" alt="Deals Icon" />
+              <Image src="images/icons/vertical_line.png" alt="Deals Icon" />
             </div>
           </div>
           <div className="deals-item">
@@ -80,7 +83,7 @@ export default function Home() {
         <section className="latest-products">
           <div className="latest-products-title">
             <div className="vertical-line-icon">
-              <img src="images/icons/vertical_line.png" alt="Vertical Line" />
+              <Image src="images/icons/vertical_line.png" alt="Vertical Line" />
             </div>
             <div className="last-pro-text">
               <h2>Newest Arrivals</h2>
@@ -89,7 +92,7 @@ export default function Home() {
           <div className="product-grid">
             <div className="product-item">
               <div className="pro-image">
-                <img
+                <Image
                   src="images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
                   alt="ASUS Zenbook"
                 />
@@ -104,7 +107,7 @@ export default function Home() {
                   performance and battery life.
                 </p>
                 <div className="pro-rating">
-                  <img src="images/ratings/rating-35.png" alt="Rating" /> (58
+                  <Image src="images/ratings/rating-35.png" alt="Rating" /> (58
                   Reviews)
                 </div>
                 <div className="sub-info-pro">
@@ -123,6 +126,7 @@ export default function Home() {
 
         {/* Add other sections similarly */}
       </main>
+      <Footer/>
     </>
   );
 };

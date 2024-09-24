@@ -1,9 +1,7 @@
-// src/components/Header/Header.js
 
 import React from 'react';
 import Image from "next/image";
-import styles from "./Header.module.css";
-import './Header'; 
+import pageStyles from "./Header.module.css";
 
 const Header = () => {
   return (
@@ -31,7 +29,7 @@ const Header = () => {
         </div>
       </div>
       {/* Nav bar Section */}
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <a href="#">
