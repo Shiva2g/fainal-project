@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import pageStyles from "./page.module.css";
+import Styles from "./page.module.css";
 import headerStyles from "./components/Header/Header.module.css";
 import footerStyles from "./components/Footer/Footer.module.css";
 import Header from "./components/Header/Header";
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <Image src="/assets/images/products/hero-img.png" alt="Hero" />
+            <Image src="/images/products/hero-img.png" alt="Hero" />
           </div>
         </div>
         <div className="forward-button">

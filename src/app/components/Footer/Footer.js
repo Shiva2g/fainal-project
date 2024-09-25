@@ -1,3 +1,5 @@
+import React from 'react';
+import Image from "next/image";
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -27,11 +29,11 @@ const Footer = () => {
           <p>Phone: +1 800 111 1111</p>
           <p>4617 Gordon Rd, Regina, SK S4W 0B7</p>
           <div className="social-icons">
-            <a href="#"><img src="images/icons/facebook_circled.png" alt="Facebook" /></a>
-            <a href="#"><img src="images/icons/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="images/icons/twitter_x.png" alt="X" /></a>
-            <a href="#"><img src="images/icons/linked_in.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="images/icons/you_tube.png" alt="YouTube" /></a>
+            <a href="#"><Image src="images/icons/facebook_circled.png" alt="Facebook" /></a>
+            <a href="#"><Image src="images/icons/instagram.png" alt="Instagram" /></a>
+            <a href="#"><Image src="images/icons/twitter_x.png" alt="X" /></a>
+            <a href="#"><Image src="images/icons/linked_in.png" alt="LinkedIn" /></a>
+            <a href="#"><Image src="images/icons/you_tube.png" alt="YouTube" /></a>
           </div>
         </div>
         <div className="divider"></div>
@@ -47,11 +49,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="payment-methods">
           <span>We accept the following paying methods :</span>
-          <img src="images/visa_1.png" alt="Visa" />
-          <img src="images/pay_pal_1.png" alt="PayPal" />
-          <img src="images/mastercard_1.png" alt="Mastercard" />
-          <img src="images/bitcoin_1.png" alt="Bitcoin" />
-          <img src="images/tether_logo_svg_1.png" alt="Tether" />
+          <Image src="images/visa_1.png" alt="Visa" />
+          <Image src="images/pay_pal_1.png" alt="PayPal" />
+          <Image src="images/mastercard_1.png" alt="Mastercard" />
+          <Image src="images/bitcoin_1.png" alt="Bitcoin" />
+          <Image src="images/tether_logo_svg_1.png" alt="Tether" />
         </div>
         <div className="footer-credits">
           <p>&copy; 2024 TechNest. All Rights Reserved.</p>

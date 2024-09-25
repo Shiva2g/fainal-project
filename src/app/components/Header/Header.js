@@ -1,39 +1,39 @@
 
 import React from 'react';
 import Image from "next/image";
-import pageStyles from "./Header.module.css";
+import headerStyles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header className={styles.headerc}>
+    <header className={headerStyles.headerc}>
       <div className="top-header">
         <div className="logo">
           <a href="index.html">
-            <img className="my-logo" src="assets/images/logo1.png" alt="Logo" />
+            <Image className="my-logo" src="assets/images/logo1.png" alt="Logo" />
           </a>
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Search for products..." />
           <button type="submit">
-            <img className="icon-search" src="images/icons/search-icon.png" alt="Search" />
+            <Image className="icon-search" src="images/icons/search-icon.png" alt="Search" />
             <div className="tooltip">Search</div>
           </button>
         </div>
         <div className="header-icons">
           <a href="checkout.html">
-            <img src="images/icons/shopping_cart.png" className="shopping-cart" alt="Cart" /> Cart
+            <Image src="images/icons/shopping_cart.png" className="shopping-cart" alt="Cart" /> Cart
           </a>
           <a href="sign-in.html">
-            <img src="images/icons/account.png" className="account" alt="Account" /> Account
+            <Image src="images/icons/account.png" className="account" alt="Account" /> Account
           </a>
         </div>
       </div>
       {/* Nav bar Section */}
-      <nav className={styles.nav}>
+      <nav className={headerStyles.nav}>
         <ul>
           <li>
             <a href="#">
-              <img src="images/icons/menu.png" className="menu-ico" alt="Menu" />
+              <Image src="images/icons/menu.png" className="menu-ico" alt="Menu" />
             </a>
           </li>
           <li className="dropdown">
