@@ -9,22 +9,22 @@ const Header = () => {
       <div className="top-header">
         <div className="logo">
           <a href="index.html">
-            <Image className="my-logo" src="assets/images/logo1.png" alt="Logo" />
+            <Image className="my-logo" src="/images/logo1.png" width={155} height={50} alt="Logo" />
           </a>
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Search for products..." />
           <button type="submit">
-            <Image className="icon-search" src="images/icons/search-icon.png" alt="Search" />
+            <Image className="icon-search" src="/images/icons/search-icon.png" width={30} height={30} alt="Search" />
             <div className="tooltip">Search</div>
           </button>
         </div>
         <div className="header-icons">
           <a href="checkout.html">
-            <Image src="images/icons/shopping_cart.png" className="shopping-cart" alt="Cart" /> Cart
+            <Image src="/images/icons/shopping_cart.png" className="shopping-cart" width={30} height={30} alt="Cart" /> Cart
           </a>
           <a href="sign-in.html">
-            <Image src="images/icons/account.png" className="account" alt="Account" /> Account
+            <Image src="/images/icons/account.png" className="account" width={30} height={30} alt="Account" /> Account
           </a>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Header = () => {
         <ul>
           <li>
             <a href="#">
-              <Image src="images/icons/menu.png" className="menu-ico" alt="Menu" />
+              <Image src="/images/icons/menu.png" className="menu-ico" width={30} height={30} alt="Menu" />
             </a>
           </li>
           <li className="dropdown">

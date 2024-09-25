@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <Image src="/images/products/hero-img.png" alt="Hero" />
+            <Image src="/images/products/hero-img.png" width={1500} height={500} alt="Hero" />
           </div>
         </div>
         <div className="forward-button">
@@ -41,18 +41,18 @@ export default function Home() {
         </div>
       </section>
 
-      <main className={styles.maincontainer}> 
+      <main className="styles.mainc"> 
         {/* Deals Section */}
         <section className="deals-section">
           <div className="deals-title">
             <div className="vertical-line-icon">
-              <Image src="images/icons/vertical_line.png" alt="Deals Icon" />
+              <Image src="/images/icons/vertical_line.png" width={50} height={50} alt="Deals Icon" />
             </div>
             <div className="last-pro-text">
               <h2>Deals</h2>
             </div>
             <div className="vertical-line-icon">
-              <Image src="images/icons/vertical_line.png" alt="Deals Icon" />
+              <Image src="/images/icons/vertical_line.png" width={30} height={30} alt="Deals Icon" />
             </div>
           </div>
           <div className="deals-item">
@@ -83,7 +83,7 @@ export default function Home() {
         <section className="latest-products">
           <div className="latest-products-title">
             <div className="vertical-line-icon">
-              <Image src="images/icons/vertical_line.png" alt="Vertical Line" />
+              <Image src="/images/icons/vertical_line.png" width={30} height={30} alt="Vertical Line" />
             </div>
             <div className="last-pro-text">
               <h2>Newest Arrivals</h2>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="product-item">
               <div className="pro-image">
                 <Image
-                  src="images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
+                  src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100} 
                   alt="ASUS Zenbook"
                 />
                 <div className="pro-like">
@@ -107,7 +107,7 @@ export default function Home() {
                   performance and battery life.
                 </p>
                 <div className="pro-rating">
-                  <Image src="images/ratings/rating-35.png" alt="Rating" /> (58
+                  <Image src="/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
                   Reviews)
                 </div>
                 <div className="sub-info-pro">
