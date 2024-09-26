@@ -12,7 +12,7 @@ const AddCart = () => {
       <header className={headerStyles.header}>
         <div className={headerStyles.topHeader}>
           <div className={headerStyles.logo}>
-            <a href="index.html">
+            <a href="page">
               <Image className="my-logo" src="/images/logo1.png" alt="Logo" />
             </a>
           </div>

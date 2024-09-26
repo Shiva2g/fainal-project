@@ -1,62 +1,53 @@
-
 import Link from "next/link";
-import Image from "next/image";
 import "./globals.css";
-import Styles from "./page.module.css";
-import headerStyles from "./components/Header/Header.module.css";
-import footerStyles from "./components/Footer/Footer.module.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-  
     <>
-      <Header/>
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="back-button">
+      <section className={styles.heroSection}>
+        <div className={styles.backButton}>
           <span className="material-symbols-outlined">arrow_back_ios</span>
         </div>
-        <div className="hero-content">
-          <div className="offer-details">
-            <div className="heading2">Welcome to TechNest</div>
-            <div className="heading1">Online Digital Shopping</div>
-            <div className="heading4">
+        <div className={styles.heroContent}>
+          <div className={styles.offerDetails}>
+            <div className={styles.heading2}>Welcome to TechNest</div>
+            <div className={styles.heading1}>Online Digital Shopping</div>
+            <div className={styles.heading4}>
               Discover Incredible Deals on Electronics
             </div>
-            <div className="heading1">
+            <div className={styles.heading1}>
               Save up to $300 on select Products.
             </div>
-            <div className="shop-buttons">
-              <button className="shop-now">Shop Now</button>
-              <button className="shop-all">Shop All</button>
+            <div className={styles.shopButtons}>
+              <button className={styles.shopNow}>Shop Now</button>
+              <button className={styles.shopAll}>Shop All</button>
             </div>
           </div>
-          <div className="hero-image">
-            <Image src="/images/products/hero-img.png" width={1500} height={500} alt="Hero" />
+          <div className={styles.heroImage}>
+            <Image src="/assets/images/products/hero-img.png" width={500} height={300} alt="Hero" />
           </div>
         </div>
-        <div className="forward-button">
+        <div className={styles.forwardButton}>
           <span className="material-symbols-outlined">arrow_forward_ios</span>
         </div>
       </section>
 
-      <main className="styles.mainc"> 
-        {/* Deals Section */}
-        <section className="deals-section">
-          <div className="deals-title">
-            <div className="vertical-line-icon">
-              <Image src="/images/icons/vertical_line.png" width={50} height={50} alt="Deals Icon" />
+      <main className={styles.main}>
+        <section className={styles.dealsSection}>
+          <div className={styles.dealsTitle}>
+            <div className={styles.verticalLineIcon}>
+              <Image src="/assets/images/icons/vertical_line.png" width={50} height={50} alt="Deals Icon" />
             </div>
-            <div className="last-pro-text">
+            <div className={styles.lastProText}>
               <h2>Deals</h2>
             </div>
-            <div className="vertical-line-icon">
-              <Image src="/images/icons/vertical_line.png" width={30} height={30} alt="Deals Icon" />
+            <div className={styles.verticalLineIcon}>
+              <Image src="/assets/images/icons/vertical_line.png" width={30} height={30} alt="Deals Icon" />
             </div>
           </div>
-          <div className="deals-item">
+          <div className={styles.dealsItem}>
             <a href="#">
               <span className="material-symbols-outlined">laptop_mac</span>
               <p>Laptop</p>
@@ -80,72 +71,67 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Main Content- latest-products */}
-        <section className="latest-products">
-          <div className="latest-products-title">
-            <div className="vertical-line-icon">
-              <Image src="/images/icons/vertical_line.png" width={30} height={30} alt="Vertical Line" />
+        <section className={styles.latestProducts}>
+          <div className={styles.latestProductsTitle}>
+            <div className={styles.verticalLineIcon}>
+              <Image src="/assets/images/icons/vertical_line.png" width={30} height={30} alt="Vertical Line" />
             </div>
-            <div className="last-pro-text">
+            <div className={styles.lastProText}>
               <h2>Newest Arrivals</h2>
             </div>
           </div>
-          <div className="product-grid">
-            <div className="product-item">
-              <div className="pro-image">
+          <div className={styles.productGrid}>
+            <div className={styles.productItem}>
+              <div className={styles.proImage}>
                 <Image
-                  src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100} 
+                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100}
                   alt="ASUS Zenbook"
                 />
-                <div className="pro-like">
+                <div className={styles.proLike}>
                   <span className="material-symbols-outlined">favorite</span>
                 </div>
               </div>
               <div>
-                <p className="pro-title">ASUS Zenbook Duo (2024) UX8406</p>
-                <p className="pro-info">
-                  Revolutionary laptop with Apple's M2 chip for unparalleled
-                  performance and battery life.
+                <p className={styles.proTitle}>ASUS Zenbook Duo (2024) UX8406</p>
+                <p className={styles.proInfo}>
+                  Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
-                <div className="pro-rating">
-                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
-                  Reviews)
+                <div className={styles.proRating}>
+                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58 Reviews)
                 </div>
-                <div className="sub-info-pro">
-                  <div className="info-button">
+                <div className={styles.subInfoPro}>
+                  <div className={styles.infoButton}>
                     <button>View Details</button>
                   </div>
-                  <div className="info-price">
+                  <div className={styles.infoPrice}>
                     <p>Price $1,399</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="product-item">
-              <div className="pro-image">
+            <div className={styles.productItem}>
+              <div className={styles.proImage}>
                 <Image
-                  src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100} 
+                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100}
                   alt="ASUS Zenbook"
                 />
-                <div className="pro-like">
+                <div className={styles.proLike}>
                   <span className="material-symbols-outlined">favorite</span>
                 </div>
               </div>
               <div>
-                <p className="pro-title">ASUS Zenbook Duo (2024) UX8406</p>
-                <p className="pro-info">
-                  Revolutionary laptop with Apple's M2 chip for unparalleled
-                  performance and battery life.
+                <p className={styles.proTitle}>ASUS Zenbook Duo (2024) UX8406</p>
+                <p className={styles.proInfo}>
+                  Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
-                <div className="pro-rating">
-                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
-                  Reviews)
+                <div className={styles.proRating}>
+                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58 Reviews)
                 </div>
-                <div className="sub-info-pro">
-                  <div className="info-button">
+                <div className={styles.subInfoPro}>
+                  <div className={styles.infoButton}>
                     <button>View Details</button>
                   </div>
-                  <div className="info-price">
+                  <div className={styles.infoPrice}>
                     <p>Price $1,399</p>
                   </div>
                 </div>
@@ -153,10 +139,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
       </main>
-      <Footer/>
     </>
   );
-};
-    
+}

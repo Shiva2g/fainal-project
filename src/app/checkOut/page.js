@@ -7,7 +7,7 @@ const CheckOut = () => {
       <header className={styles.header}>
         <div className={styles.topHeader}>
           <div className={styles.logo}>
-            <a href="index.html"><img className={styles.myLogo} src="images/logo1.png" alt="Logo" /></a>
+            <a href="#"><img className={styles.myLogo} src="images/logo1.png" alt="Logo" /></a>
           </div>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Search for products..." />

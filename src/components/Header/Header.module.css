@@ -1,11 +1,12 @@
-.headerc {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
 }
-.top-header {
+
+.topHeader {
   background-color: #014bca;
   color: #fff;
   display: flex;
@@ -13,33 +14,34 @@
   justify-content: space-between;
   align-items: center;
   height: 55px;
-  
 }
-/* right- header */
+
+/* right-header */
 .logo {
-      width: 155px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      margin-left: 30px;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
-.my-logo {
+
+.myLogo {
   height: 35px;
 }
 
-.my-logo:hover {
+.myLogo:hover {
   height: 36px;
-
 }
-/* middel- header */
-.search-bar {
+
+/* middle-header */
+.searchBar {
   display: flex;
   flex: 1;
   max-width: 500px;
   align-items: center;
 }
 
-.search-bar input {
+.searchBar input {
   padding-left: 10px;
   width: 350px;
   height: 35px;
@@ -49,21 +51,24 @@
   box-shadow: inset 1px 2px 3px rgba(15, 15, 15, 0.201);
   flex: 1;
 }
-.search-bar button{
+
+.searchBar button {
   border-radius: 0 20px 20px 0;
   background: linear-gradient(180deg, #edfe82, #fecb7e);
   display: flex;
   padding: 6px 16px;
   width: 60px;
-  height: 36px; 
+  height: 36px;
   border: none;
   box-shadow: inset 0px 1px 10px rgba(135, 222, 3, 0.25);
   margin-right: 10px;
   position: relative;
 }
-.search-bar button:hover .tooltip{
-opacity: 1;
+
+.searchBar button:hover .tooltip {
+  opacity: 1;
 }
+
 .tooltip {
   position: absolute;
   bottom: -32px;
@@ -77,55 +82,59 @@ opacity: 1;
   transition: 0.15s;
   pointer-events: none;
 }
-.icon-search {
+
+.iconSearch {
   height: 20px;
   width: 20px;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-/* left side- header */
-.header-icons {
-  width: 160px;
   display: flex;
-  align-items: center;  
-  justify-content:flex-end;
-  margin-left: 10px; 
-  margin-right: 30px;
-  flex-shrink: 0; 
+  justify-content: center;
+  align-items: center;
 }
 
-.header-icons a {
+/* left side-header */
+.headerIcons {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 10px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.headerIcons a {
   color: #fff;
   text-decoration: none;
   display: flex;
-  align-items: center;  
+  align-items: center;
   font-size: 14px;
 }
 
-.shopping-cart , .account {
+.shoppingCart,
+.account {
   padding-right: 5px;
   width: 30px;
   height: 30px;
 }
-.header-icons a:hover {
-  
+
+.headerIcons a:hover {
   font-size: 15px;
   transition: 0.15s;
 }
-/* nav bar */
 
+/* nav bar */
 .nav {
   box-shadow: 0px 2px 15px 0px rgba(128, 131, 137, 0.184);
 }
+
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content:left;
-  padding:  0;
+  justify-content: left;
+  padding: 0;
   background-color: #ffffff;
   padding-left: 20px;
-  height:auto
+  height: auto;
 }
 
 .nav ul li {
@@ -142,15 +151,15 @@ opacity: 1;
 
 .nav ul li a:hover {
   color: #014aca;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.menu-ico {
-  height: 16px ;
-  width: 20px ;
-  }
-  
-.dropdown-content {
+.menuIco {
+  height: 16px;
+  width: 20px;
+}
+
+.dropdownContent {
   display: none;
   position: absolute;
   background-color: #f0efef;
@@ -160,7 +169,7 @@ opacity: 1;
   border-radius: 5px;
 }
 
-.dropdown-content a {
+.dropdownContent a {
   color: #1c1c1c;
   padding: 5px 30px 5px 10px;
   text-decoration: none;
@@ -169,11 +178,10 @@ opacity: 1;
   padding: 10px;
 }
 
-.dropdown-content a:hover {
+.dropdownContent a:hover {
   background-color: #e2e1e1;
-  
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdownContent {
   display: block;
 }

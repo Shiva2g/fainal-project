@@ -8,7 +8,7 @@ const SignIn = () => {
       <header>
         <div className={styles.topHeader}>
           <div className={styles.logo}>
-            <a href="index.html">
+            <a href="page">
               <img className={styles.myLogo} src="images/logo1.png" alt="Logo" />
             </a>
           </div>
