@@ -20,12 +20,13 @@ const Header = () => {
           </button>
         </div>
         <div className={Styles.headerIcons}>
-          <a href="#">
-            <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> Cart
-          </a>
-          <a href="#">
+          <Link href="/checkOut" passHref>
+            <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
+            <span>Cart</span>
+          </Link>
+          <Link href="/signIn" passHref>
             <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={30} alt="Account" /> Account
-          </a>
+          </Link>
         </div>
       </div>
       {/* Nav bar Section */}

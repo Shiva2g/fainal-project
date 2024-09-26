@@ -1,19 +1,11 @@
 // signIn.js
 import React from 'react';
-import styles from './signIn.module.css';
+import styles from './page.module.css';
 
 const SignIn = () => {
   return (
     <div>
-      <header>
-        <div className={styles.topHeader}>
-          <div className={styles.logo}>
-            <a href="page">
-              <img className={styles.myLogo} src="images/logo1.png" alt="Logo" />
-            </a>
-          </div>
-        </div>
-      </header>
+    
       <main className={styles.main}>
         <div>
           <a href="#" className={styles.backLink}>&lt; Back to previous page</a>
@@ -22,7 +14,7 @@ const SignIn = () => {
           <h1>Sign In</h1>
           <div className={styles.mainSign}>
             <div className={styles.signInForm}>
-              <form action="#" method="post">
+              <form className={styles.form} action="#" method="post">
                 <label htmlFor="email">Email Address</label>
                 <input type="email" id="email" name="email" required />
                 <label htmlFor="password">Password</label>
@@ -69,14 +61,6 @@ const SignIn = () => {
         </div>
       </main>
 
-      <footer>
-        <p>
-          Security & Privacy - Every transaction on TechNest.ca is secure. Any personal information you give us will be handled according to our <a href="#">Privacy Policy.</a>
-        </p>
-        <div className={styles.footerCredits}>
-          <p>&copy; 2024 TechNest. All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };
