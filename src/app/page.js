@@ -49,23 +49,23 @@ export default function Home() {
           </div>
           <div className={styles.dealsItem}>
             <a href="#">
-              <span className="material-symbols-outlined">laptop_mac</span>
+            <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
               <p>Laptop</p>
             </a>
             <a href="#">
-              <span className="material-symbols-outlined">smartphone</span>
+            <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
               <p>Smartphone</p>
             </a>
             <a href="#">
-              <span className="material-symbols-outlined">photo_camera</span>
+            <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
               <p>Camera</p>
             </a>
             <a href="#">
-              <span className="material-symbols-outlined">stadia_controller</span>
+            <span className={`${styles.icon} material-symbols-outlined`}>stadia_controller</span>
               <p>Gaming Console</p>
             </a>
             <a href="#">
-              <span className="material-symbols-outlined">headset_mic</span>
+            <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
               <p>HeadPhone</p>
             </a>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
             <div className={styles.productItem}>
               <div className={styles.proImage}>
                 <Image
-                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={200} height={200}
+                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={250} height={250}
                   alt="ASUS Zenbook"
                 />
                 <div className={styles.proLike}>
@@ -112,27 +112,83 @@ export default function Home() {
             <div className={styles.productItem}>
               <div className={styles.proImage}>
                 <Image
-                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={200} height={200}
-                  alt="ASUS Zenbook"
+                  src="/assets/images/products/phone/iPhone 16 Pro.jfif" width={200} height={200}
+                  alt="iPhone 16 Pro"
                 />
                 <div className={styles.proLike}>
                   <span className="material-symbols-outlined">favorite</span>
                 </div>
               </div>
               <div>
-                <p className={styles.proTitle}>ASUS Zenbook Duo (2024) UX8406</p>
+                <p className={styles.proTitle}>iPhone 16 Pro (2024)</p>
                 <p className={styles.proInfo}>
-                  Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
+                Titanium design with larger 6.3‑inch Super Retina XDR display, footnote 1 durable, latest-generation Ceramic Shield, Action button, and USB-C with USB 3 speeds.
                 </p>
                 <div className={styles.proRating}>
-                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58 Reviews)
+                  <Image src="/assets/images/ratings/rating-35.png" width={35} height={35} alt="Rating" /> (24 Reviews)
                 </div>
                 <div className={styles.subInfoPro}>
                   <div className={styles.infoButton}>
                     <button>View Details</button>
                   </div>
                   <div className={styles.infoPrice}>
-                    <p>Price $1,399</p>
+                    <p>Price From $1449</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.productItem}>
+              <div className={styles.proImage}>
+                <Image
+                  src="/assets/images/products/camera/Canon EOS R5 C Mirrorless2.webp" width={230} height={160}
+                  alt="Canon EOS R5 C Mirrorless"
+                />
+                <div className={styles.proLike}>
+                  <span className="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+              <div>
+                <p className={styles.proTitle}>Canon EOS R5 C Mirrorless (2024) </p>
+                <p className={styles.proInfo}>
+                Canon EOS R5 C Mirrorless Digital Cinema Camera + RF 24-105mm F4 L is USM Lens Kit (International Model).
+                </p>
+                <div className={styles.proRating}>
+                  <Image src="/assets/images/ratings/rating-35.png" width={35} height={35} alt="Rating" /> (100 Reviews)
+                </div>
+                <div className={styles.subInfoPro}>
+                  <div className={styles.infoButton}>
+                    <button>View Details</button>
+                  </div>
+                  <div className={styles.infoPrice}>
+                    <p>Price $5,654.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.productItem}>
+              <div className={styles.proImage}>
+                <Image
+                  src="/assets/images/products/headphone/AirPods Max2.jfif" width={230} height={200}
+                  alt="AirPods Max"
+                />
+                <div className={styles.proLike}>
+                  <span className="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+              <div>
+                <p className={styles.proTitle}>AirPods Max (2024)</p>
+                <p className={styles.proInfo}>
+                  The ultimate over-ear personal listening experience — now in fresh new colors. AirPods Max deliver stunningly detailed, high-fidelity audio.
+                </p>
+                <div className={styles.proRating}>
+                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (18 Reviews)
+                </div>
+                <div className={styles.subInfoPro}>
+                  <div className={styles.infoButton}>
+                    <button>View Details</button>
+                  </div>
+                  <div className={styles.infoPrice}>
+                    <p>Price $549</p>
                   </div>
                 </div>
               </div>

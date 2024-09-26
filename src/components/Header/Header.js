@@ -54,6 +54,7 @@ const Header = () => {
           <li><a href="#">Tech News</a></li>
           <li><a href="#">Deals</a></li>
           <li><a href="aboutUs">About Us</a></li>
+          
         </ul>
       </nav>
     </header>
