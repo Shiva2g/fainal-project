@@ -1,82 +1,12 @@
 // src/app/components/AddCart/AddCart.js
 import React from 'react';
-import Image from 'next/image'; 
-import headerStyles from '../Header/Header.module.css'; 
-import footerStyles from '../Footer/Footer.module.css'; 
-import styles from './AddCart.module.css'; 
+import Image from 'next/image';
+import styles from './page.module.css'; 
 
 const AddCart = () => {
   return (
     <div>
-      {/* Header Section */}
-      <header className={headerStyles.header}>
-        <div className={headerStyles.topHeader}>
-          <div className={headerStyles.logo}>
-            <a href="page">
-              <Image className="my-logo" src="/images/logo1.png" alt="Logo" />
-            </a>
-          </div>
-          <div className={headerStyles.searchBar}>
-            <input type="text" placeholder="Search for products..." />
-            <button type="submit">
-              <Image className="icon-search" src="/images/icons/search-icon.png" alt="Search Icon" />
-              <div className="tooltip">Search</div>
-            </button>
-          </div>
-          <div className={headerStyles.headerIcons}>
-            <a href="#">
-              <Image src="/images/icons/shopping_cart.png" className="shopping-cart" alt="Cart" /> Cart
-            </a>
-            <a href="#">
-              <Image src="/images/icons/account.png" className="account" alt="Account" /> Account
-            </a>
-          </div>
-        </div>
-
-        {/* Nav Bar Section */}
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                <Image src="/images/icons/menu.png" className="menu-ico" alt="Menu" />
-              </a>
-            </li>
-            <li className="dropdown">
-              <a href="#">Products</a>
-              <div className="dropdown-content">
-                <a href="#">Mobile & Accessories</a>
-                <hr />
-                <a href="#">Laptops & Accessories</a>
-                <hr />
-                <a href="#">Cameras & Photography</a>
-                <hr />
-                <a href="#">Gaming & Accessories</a>
-                <hr />
-                <a href="#">HeadPhone</a>
-              </div>
-            </li>
-            <li><a href="#">Compare & Analyze</a></li>
-            <li><a href="#">Smart Picks</a></li>
-            <li><a href="#">Tech News</a></li>
-            <li>
-              <a href="#">Deals</a>
-              <div className="dropdown-content">
-                <a href="#">Laptop</a>
-                <hr />
-                <a href="#">Mobile</a>
-                <hr />
-                <a href="#">Cameras</a>
-                <hr />
-                <a href="#">Gaming</a>
-                <hr />
-                <a href="#">HeadPhone</a>
-              </div>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-
+      
       <main>
         <div className={styles.breadcrumb}>
           <p>Electronics {'>'} Laptop {'>'} New Arrival {'>'} Shop Laptop by type {'>'} <strong>Zenbook Duo (2024) UX8406</strong></p>
@@ -150,12 +80,6 @@ const AddCart = () => {
         </div>
       </main>
 
-      {/* Footer Section */}
-      <footer className={footerStyles.footer}>
-        <div className={footerStyles.footerContainer}>
-          {/* Your footer content here... */}
-        </div>
-      </footer>
     </div>
   );
 };

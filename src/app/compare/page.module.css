@@ -1,0 +1,151 @@
+main {
+  padding: 2% 5% 5% 5%;
+}
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Category Section */
+.categorySection {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.verticalLineIcon img {
+  height: 40px;
+}
+.categoryTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.categoryItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 35px 0;
+}
+.categoryItem a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.categoryItem .material-symbols-outlined {
+  font-size: 80px;
+  color: #616161;
+  margin-bottom: 10px;
+}
+.categoryItem a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 20px rgba(39, 39, 39, 0.1);
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  transition: 0.18s;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 50%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  border-radius: 5px;
+  border: 1px solid #014aca;
+  position: relative;
+}
+
+/* Main Product Section */
+.products {
+  width: 80%;
+  padding-left: 15px;
+}
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #014aca;
+  align-items: center;
+}
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.productItem {
+  width: 49% !important;
+}
+
+.comparisonBox {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.searchInput {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.searchButton {
+  padding: 10px 15px;
+  margin-left: -5px;
+}
+
+.popularComparisons {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.compareItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.compareIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.addButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.selectedProducts {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.compareButton {
+  padding: 10px 40px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

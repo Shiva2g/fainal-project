@@ -1,0 +1,92 @@
+main {
+  padding: 0 10%;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo2 {
+  width: auto;
+  height: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+  color: #0044ba;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+input:invalid + .errorMessage {
+  display: block;
+}
+
+.continueBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0044ba;
+  border: 1px solid #0044ba;
+  color: #fafafa;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+.continueBtn:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #eceff1;
+  text-decoration: none;
+}
