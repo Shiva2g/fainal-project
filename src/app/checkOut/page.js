@@ -8,19 +8,19 @@ const CheckOut = () => {
       <header className={styles.header}>
         <div className={styles.topHeader}>
           <div className={styles.logo}>
-            <a href="#"><Image className={styles.myLogo} src="images/logo1.png" alt="Logo" /></a>
+            <a href="#"><Image className={styles.myLogo} src="/assets/images/logo1.png" alt="Logo" /></a>
           </div>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Search for products..." />
             <button type="submit">
-              <Image className={styles.iconSearch} src="images/icons/search-icon.png" alt="Search Icon" />
+              <Image className={styles.iconSearch} src="/assets/images/icons/search-icon.png" alt="Search Icon" />
               <div className={styles.tooltip}>Search</div>
             </button>
           </div>
           <div className={styles.headerIcons}>
             <div className={styles.checkoutItem}>Checkout (3 items)</div>
-            <a href="#"><Image src="images/icons/shopping_cart.png" className={styles.shoppingCart} alt="Cart" /> Cart</a>
-            <a href="#"><Image src="images/icons/account.png" className={styles.account} alt="Account" /> Account</a>
+            <a href="#"><Image src="/assets/images/icons/shopping_cart.png" className={styles.shoppingCart} alt="Cart" /> Cart</a>
+            <a href="#"><Image src="/assets/images/icons/account.png" className={styles.account} alt="Account" /> Account</a>
           </div>
         </div>
       </header>
@@ -36,7 +36,7 @@ const CheckOut = () => {
                 Delivery date: Tuesday, September 10
               </div>
               <div className={styles.cartItemDetailsGrid}>
-                <Image className={styles.productImage} src="images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook" />
+                <Image className={styles.productImage} src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook" />
                 <div className={styles.cartItemDetails}>
                   <div className={styles.productName}>ASUS Zenbook Duo (2024) UX8406</div>
                   <div className={styles.productPrice}>$1599</div>
@@ -56,7 +56,7 @@ const CheckOut = () => {
                 Delivery date: Wednesday, September 15
               </div>
               <div className={styles.cartItemDetailsGrid}>
-                <Image className={styles.productImage} src="images/products/phone/Apple iPhone 15 Pro Max 512GB - White Titanium.jpg" alt="iPhone 15 Pro Max" />
+                <Image className={styles.productImage} src="/assets/images/products/phone/Apple iPhone 15 Pro Max 512GB - White Titanium.jpg" alt="iPhone 15 Pro Max" />
                 <div className={styles.cartItemDetails}>
                   <div className={styles.productName}>Apple iPhone 15 Pro Max 512GB - White Titanium</div>
                   <div className={styles.productPrice}>$1220</div>

@@ -4,7 +4,8 @@ import styles from "./page.module.css";
 
 const Search = () => {
   return (
-    <main>
+    <>
+    <main className={styles.main}>
       <div className={styles.addressPath}>
         <a href="#">Home</a> {'>'} <a href="#">Laptops & Accessories</a> {'>'} <a href="#">Laptops & MacBooks</a> {'>'} <a href="#">Windows Laptops</a>
       </div>
@@ -100,7 +101,7 @@ const Search = () => {
           <div className={styles.productGrid}>
             <div className={styles.productItem}>
               <div className={styles.proImage}>
-                <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook Duo Image" width={500} height={500} />
+                <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook Duo Image" width={500} height={500} />
                 <div className={styles.proLike}>
                   <span className="material-symbols-outlined">favorite</span>
                 </div>
@@ -113,7 +114,7 @@ const Search = () => {
                   Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
                 <div className={styles.proRating}>
-                  <Image src="/images/ratings/rating-35.png" alt="Rating 35" width={100} height={20} /> (58 Review)
+                  <Image src="/assets/images/ratings/rating-35.png" alt="Rating 35" width={100} height={20} /> (58 Review)
                 </div>
                 <div className={styles.subInfoPro}>
                   <div className={styles.infoButton}>
@@ -131,6 +132,7 @@ const Search = () => {
         </section>
       </div>
     </main>
+    </>
   );
 };
 

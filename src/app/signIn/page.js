@@ -1,6 +1,6 @@
 // signIn.js
 import React from 'react';
-import styles from './signIn.module.css'; // Importing the CSS module
+import styles from './signIn.module.css';
 
 const SignIn = () => {
   return (

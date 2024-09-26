@@ -5,13 +5,13 @@ import "./globals.css"; // Assuming global styles
 const CreateAccount = () => {
   return (
     <div>
-      <main>
+      <main className={styles.main}>
         <div>
           <a href="#" className={styles.backLink}>&#60; Back to previous page</a>
         </div>
         <div className={styles.container}>
           <div className={styles.formContainer}>
-            <Image src="/images/logo3.png" alt="TechNest Logo" className={styles.logo2} width={150} height={50} />
+            <Image src="/assets/images/logo3.png" alt="TechNest Logo" className={styles.logo2} width={150} height={50} />
             <h1>Create account</h1>
             <form>
               <label htmlFor="name">Your name</label>

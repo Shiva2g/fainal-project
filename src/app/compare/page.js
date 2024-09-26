@@ -5,18 +5,18 @@ import styles from "./page.module.css";
 const Compare = () => {
   return (
     <div>
-      <main>
+      <main className={styles.main}>
         <h1>Product Comparison</h1>
         <section className={styles.categorySection}>
           <div className={styles.categoryTitle}>
             <div className={styles.verticalLineIcon}>
-              <Image src="/images/icons/vertical_line.png" alt="category" width={20} height={20} />
+              <Image src="/assets/images/icons/vertical_line.png" alt="category" width={20} height={20} />
             </div>
             <div className={styles.lastProText}>
               <h3>Select the category to compare:</h3>
             </div>
             <div className={styles.verticalLineIcon}>
-              <Image src="/images/icons/vertical_line.png" alt="category" width={20} height={20} />
+              <Image src="/assets/images/icons/vertical_line.png" alt="category" width={20} height={20} />
             </div>
           </div>
           <div className={styles.categoryItem}>
@@ -54,7 +54,7 @@ const Compare = () => {
                 <h3>Most Compared Products</h3>
                 <div className={styles.compareItem}>
                   <Image
-                    src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
+                    src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
                     alt="Asus Pro Image"
                     width={100}
                     height={100}
@@ -65,7 +65,7 @@ const Compare = () => {
                 </div>
                 <div className={styles.compareItem}>
                   <Image
-                    src="/images/products/laptop/ASUS TUF Gaming A14 (2024) 14 inch Laptop.webp"
+                    src="/assets/images/products/laptop/ASUS TUF Gaming A14 (2024) 14 inch Laptop.webp"
                     alt="Laptop 2"
                     width={100}
                     height={100}
@@ -96,7 +96,7 @@ const Compare = () => {
               <div className={styles.productItem}>
                 <div className={styles.proImage}>
                   <Image
-                    src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
+                    src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp"
                     alt="MacBook Pro M2 Image"
                     width={150}
                     height={150}
@@ -110,7 +110,7 @@ const Compare = () => {
                   Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
                 <div className={styles.proRating}>
-                  <Image src="/images/ratings/rating-35.png" alt="Rating" width={100} height={20} /> (58 Review)
+                  <Image src="/assets/images/ratings/rating-35.png" alt="Rating" width={100} height={20} /> (58 Review)
                 </div>
                 <div className={styles.subInfoPro}>
                   <div className={styles.infoButton}>
@@ -125,7 +125,7 @@ const Compare = () => {
               <div className={styles.productItem}>
                 <div className={styles.proImage}>
                   <Image
-                    src="/images/products/laptop/ASUS TUF Gaming A14 (2024) 14 inch Laptop.webp"
+                    src="/assets/images/products/laptop/ASUS TUF Gaming A14 (2024) 14 inch Laptop.webp"
                     alt="Asus Pro Image"
                     width={150}
                     height={150}
@@ -139,7 +139,7 @@ const Compare = () => {
                   Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
                 <div className={styles.proRating}>
-                  <Image src="/images/ratings/rating-35.png" alt="Rating" width={100} height={20} /> (58 Review)
+                  <Image src="/assets/images/ratings/rating-35.png" alt="Rating" width={100} height={20} /> (58 Review)
                 </div>
                 <div className={styles.subInfoPro}>
                   <div className={styles.infoButton}>

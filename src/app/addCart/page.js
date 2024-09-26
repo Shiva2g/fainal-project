@@ -7,26 +7,26 @@ const AddCart = () => {
   return (
     <div>
       
-      <main>
+      <main className={styles.main}>
         <div className={styles.breadcrumb}>
           <p>Electronics {'>'} Laptop {'>'} New Arrival {'>'} Shop Laptop by type {'>'} <strong>Zenbook Duo (2024) UX8406</strong></p>
         </div>
         <div className={styles.productContainer}>
           <div className={styles.productImages}>
             <div className={styles.thumbnailImages}>
-              <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="Zenbook S 16" />
-              <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop1.webp" alt="Zenbook S 16 - Alt 1" />
-              <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop2.webp" alt="Zenbook S 16 - Alt 2" />
-              <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop3.webp" alt="Zenbook S 16 - Alt 3" />
+              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="Zenbook S 16" />
+              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop1.webp" alt="Zenbook S 16 - Alt 1" />
+              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop2.webp" alt="Zenbook S 16 - Alt 2" />
+              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop3.webp" alt="Zenbook S 16 - Alt 3" />
             </div>
-            <Image src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="Zenbook S 16" />
+            <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="Zenbook S 16" />
           </div>
 
           <div className={styles.productDetails}>
             <h3>ASUS Zenbook Duo (2024) UX8406</h3>
             <p className={styles.description}>A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.</p>
             <div className={styles.proRating}>
-              <Image src="/images/ratings/rating-35.png" alt="Rating" /> (58 Reviews)
+              <Image src="/assets/images/ratings/rating-35.png" alt="Rating" /> (58 Reviews)
             </div>
             <hr />
             <div className={styles.price}>

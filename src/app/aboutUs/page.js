@@ -16,7 +16,7 @@ const AboutUs= () => {
         <div className={styles.heroContent}>
           <div className={styles.offerDetails}>
             <div className={styles.logo}>
-              <Image className={styles.myLogo} src="images/logo.png" alt="TechNest Logo" />
+              <Image className={styles.myLogo} src="/assets/images/logo.png" alt="TechNest Logo" />
             </div>
             <div className={styles.intro}>
               <h1>About TechNest Marketplace</h1>
@@ -55,7 +55,7 @@ const AboutUs= () => {
             </ul>
           </div>
           <div>
-            <Image className={styles.trustPic} src="images/online-shopping.png" alt="Online Shopping" />
+            <Image className={styles.trustPic} src="/assets/images/online-shopping.png" alt="Online Shopping" />
           </div>
         </section>
 
