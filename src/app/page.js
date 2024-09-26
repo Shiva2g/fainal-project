@@ -44,7 +44,7 @@ export default function Home() {
               <h2>Deals</h2>
             </div>
             <div className={styles.verticalLineIcon}>
-              <Image src="/assets/images/icons/vertical_line.png" width={30} height={30} alt="Deals Icon" />
+              <Image src="/assets/images/icons/vertical_line.png" width={35} height={35} alt="Deals Icon" />
             </div>
           </div>
           <div className={styles.dealsItem}>
@@ -84,7 +84,7 @@ export default function Home() {
             <div className={styles.productItem}>
               <div className={styles.proImage}>
                 <Image
-                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100}
+                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={200} height={200}
                   alt="ASUS Zenbook"
                 />
                 <div className={styles.proLike}>
@@ -97,7 +97,7 @@ export default function Home() {
                   Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
                 <div className={styles.proRating}>
-                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58 Reviews)
+                  <Image src="/assets/images/ratings/rating-35.png" width={35} height={35} alt="Rating" /> (58 Reviews)
                 </div>
                 <div className={styles.subInfoPro}>
                   <div className={styles.infoButton}>
@@ -112,7 +112,7 @@ export default function Home() {
             <div className={styles.productItem}>
               <div className={styles.proImage}>
                 <Image
-                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100}
+                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={200} height={200}
                   alt="ASUS Zenbook"
                 />
                 <div className={styles.proLike}>

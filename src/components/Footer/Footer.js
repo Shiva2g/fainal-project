@@ -49,11 +49,11 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <div className={styles.paymentMethods}>
           <span>We accept the following paying methods :</span>
-          <Image src="/assets/images/visa_1.png" width={30} height={30} alt="Visa" />
-          <Image src="/assets/images/pay_pal_1.png" width={30} height={30} alt="PayPal" />
-          <Image src="/assets/images/mastercard_1.png" width={30} height={30} alt="Mastercard" />
-          <Image src="/assets/images/bitcoin_1.png" width={30} height={30} alt="Bitcoin" />
-          <Image src="/assets/images/tether_logo_svg_1.png" width={30} height={30} alt="Tether" />
+          <Image src="/assets/images/visa_1.png" width={25} height={25} alt="Visa" />
+          <Image src="/assets/images/pay_pal_1.png" width={25} height={25} alt="PayPal" />
+          <Image src="/assets/images/mastercard_1.png" width={30} height={25} alt="Mastercard" />
+          <Image src="/assets/images/bitcoin_1.png" width={30} height={25} alt="Bitcoin" />
+          <Image src="/assets/images/tether_logo_svg_1.png" width={30} height={25} alt="Tether" />
         </div>
         <div className={styles.footerCredits}>
           <p>&copy; 2024 TechNest. All Rights Reserved.</p>

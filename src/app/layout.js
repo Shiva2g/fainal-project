@@ -4,7 +4,7 @@ import {Inter} from "next/font/google";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-const inter = Inter ({display:"swap", weight:["100","200","300","400"], subsets:["latin"]});
+const inter = Inter ({display:"swap", weight:["100","200","300","400","500","600","700","800"], subsets:["latin"]});
 
 export const metadata = {
   title: "Create Next App",
