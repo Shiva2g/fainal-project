@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import "./globals.css";
 import Styles from "./page.module.css";
 import headerStyles from "./components/Header/Header.module.css";
 import footerStyles from "./components/Footer/Footer.module.css";
@@ -107,7 +108,7 @@ export default function Home() {
                   performance and battery life.
                 </p>
                 <div className="pro-rating">
-                  <Image src="/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
+                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
                   Reviews)
                 </div>
                 <div className="sub-info-pro">
@@ -120,11 +121,39 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Repeat product-item div for other products */}
+            <div className="product-item">
+              <div className="pro-image">
+                <Image
+                  src="/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={100} height={100} 
+                  alt="ASUS Zenbook"
+                />
+                <div className="pro-like">
+                  <span className="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+              <div>
+                <p className="pro-title">ASUS Zenbook Duo (2024) UX8406</p>
+                <p className="pro-info">
+                  Revolutionary laptop with Apple's M2 chip for unparalleled
+                  performance and battery life.
+                </p>
+                <div className="pro-rating">
+                  <Image src="/assets/images/ratings/rating-35.png" width={30} height={30} alt="Rating" /> (58
+                  Reviews)
+                </div>
+                <div className="sub-info-pro">
+                  <div className="info-button">
+                    <button>View Details</button>
+                  </div>
+                  <div className="info-price">
+                    <p>Price $1,399</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-
-        {/* Add other sections similarly */}
+        
       </main>
       <Footer/>
     </>

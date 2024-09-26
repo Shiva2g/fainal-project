@@ -51,22 +51,8 @@ const Header = () => {
             </div>
           </li>
           <li><a href="compare.html">Compare & Analyze</a></li>
-          <li><a href="#">Smart Picks</a></li>
           <li><a href="#">Tech News</a></li>
-          <li>
-            <a href="#">Deals</a>
-            <div className="dropdown-content">
-              <a href="#">Laptop</a>
-              <hr />
-              <a href="#">Mobile</a>
-              <hr />
-              <a href="#">Cameras</a>
-              <hr />
-              <a href="#">Gaming</a>
-              <hr />
-              <a href="#">HeadPhone</a>
-            </div>
-          </li>
+          <li><a href="#">Deals</a></li>
           <li><a href="about-us.html">About Us</a></li>
         </ul>
       </nav>

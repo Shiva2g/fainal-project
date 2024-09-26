@@ -1,6 +1,6 @@
 // src/app/components/AddCart/AddCart.js
 import React from 'react';
-import Image from 'next/image'; // use Next.js Image component
+import Image from 'next/image'; 
 import headerStyles from '../Header/Header.module.css'; 
 import footerStyles from '../Footer/Footer.module.css'; 
 import styles from './AddCart.module.css'; 
