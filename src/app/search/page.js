@@ -1,4 +1,5 @@
-import "./globals.css";
+
+import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -7,7 +8,7 @@ const Search = () => {
     <>
     <main className={styles.main}>
       <div className={styles.addressPath}>
-        <a href="#">Home</a> {'>'} <a href="#">Laptops & Accessories</a> {'>'} <a href="#">Laptops & MacBooks</a> {'>'} <a href="#">Windows Laptops</a>
+        <Link href="#">Home</Link> {'>'} <Link href="#">Laptops & Accessories</Link> {'>'} <Link href="#">Laptops & MacBooks</Link> {'>'} <Link href="#">Windows Laptops</Link>
       </div>
       <div className={styles.container}>
         {/* Sidebar */}

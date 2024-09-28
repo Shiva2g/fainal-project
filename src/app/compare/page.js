@@ -1,4 +1,5 @@
-import "./globals.css";
+
+import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -20,26 +21,26 @@ const Compare = () => {
             </div>
           </div>
           <div className={styles.categoryItem}>
-            <a href="">
+            <Link href="">
               <span className="material-symbols-outlined">laptop_mac</span>
               <p>Laptop</p>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <span className="material-symbols-outlined">smartphone</span>
               <p>Smartphone</p>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <span className="material-symbols-outlined">photo_camera</span>
               <p>Camera</p>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <span className="material-symbols-outlined">stadia_controller</span>
               <p>Gaming Console</p>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <span className="material-symbols-outlined">headset_mic</span>
               <p>HeadPhone</p>
-            </a>
+            </Link>
           </div>
         </section>
 

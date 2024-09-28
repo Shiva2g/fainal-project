@@ -136,15 +136,13 @@
   font-size: 14px;
 }
 
-table {
-  border: 1px solid #ccc; /* Adjusted for visibility */
-}
-
-table,
-th,
-td {
+.deliveryInfo table {
   border: 1px solid #ccc; /* Adjusted for visibility */
   border-width: thin;
+}
+
+.deliveryInfo th, .deliveryInfo td {
+  border: 1px solid #ccc; /* Adjusted for visibility */
   padding: 10px;
 }
 

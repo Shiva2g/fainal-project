@@ -1,14 +1,17 @@
 .main {
+  margin-top: 20px;
   padding: 0 10%;
   font-size: 14px;
 }
-
+.backLink {
+  padding-left: 10px;
+}
 .container {
   display: flex;
   flex-direction: column;
   padding: 40px 60px 60px 60px;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 20px auto 60px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

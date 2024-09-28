@@ -1,4 +1,5 @@
-import "./globals.css";
+
+import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -7,7 +8,7 @@ const AboutUs= () => {
     <>
     <div className={styles.addressBar}>
         <p>
-          <a href="index.html">Home</a> {'>'} <strong>What is TechNest Marketplace?</strong>
+          <Link href="/">Home</Link> {'>'} <strong>What is TechNest Marketplace?</strong>
         </p>
       </div>
 
@@ -16,7 +17,7 @@ const AboutUs= () => {
         <div className={styles.heroContent}>
           <div className={styles.offerDetails}>
             <div className={styles.logo}>
-              <Image className={styles.myLogo} src="/assets/images/logo.png" alt="TechNest Logo" />
+              <Image className={styles.myLogo} src="/assets/images/logo.png" alt="TechNest Logo" width={120} height={30}/>
             </div>
             <div className={styles.intro}>
               <h1>About TechNest Marketplace</h1>
@@ -32,8 +33,8 @@ const AboutUs= () => {
       </div>
 
       {/* Main Section */}
-      <main>
-        <section className={styles.services}>
+      <main className={styles.main}>
+        <section className={styles.section}>
           <h2>What We Offer</h2>
           <ul>
             <li>Wide selection of electronics, including <strong>mobile phones</strong>, <strong>laptops</strong>, <strong>headphones</strong>, and <strong>cameras</strong>.</li>
@@ -44,29 +45,31 @@ const AboutUs= () => {
           </ul>
         </section>
 
-        <section className={styles.trust}>
-          <div>
-            <h2>Why Shop With Us?</h2>
-            <p>At TechNest, we prioritize customer satisfaction. Shop with confidence thanks to:</p>
-            <ul>
-              <li><strong>Commitment to customer service:</strong> We ensure all your needs are met with our friendly and knowledgeable team.</li>
-              <li><strong>Secure transactions:</strong> Your payment information is encrypted and processed safely.</li>
-              <li><strong>Money-back guarantee:</strong> Unsatisfied with your purchase? Our hassle-free return policy has you covered.</li>
-            </ul>
-          </div>
-          <div>
-            <Image className={styles.trustPic} src="/assets/images/online-shopping.png" alt="Online Shopping" />
+        <section className={styles.section}>
+          <div className={styles.trust}> 
+            <div >
+              <h2>Why Shop With Us?</h2>
+              <p>At TechNest, we prioritize customer satisfaction. Shop with confidence thanks to:</p>
+              <ul>
+                <li><strong>Commitment to customer service:</strong> We ensure all your needs are met with our friendly and knowledgeable team.</li>
+                <li><strong>Secure transactions:</strong> Your payment information is encrypted and processed safely.</li>
+                <li><strong>Money-back guarantee:</strong> Unsatisfied with your purchase? Our hassle-free return policy has you covered.</li>
+              </ul>
+            </div>
+            <div>
+              <Image className={styles.trustPic} src="/assets/images/online-shopping.png" alt="Online Shopping" width={150} height={150} />
+            </div>
           </div>
         </section>
 
-        <section className={styles.refundPolicy}>
+        <section className={styles.section}>
           <h2>Refund & Return Policy</h2>
           <p>
             If you're not completely satisfied with your purchase, you can return the item within 30 days for a full refund. We make the return process easy and transparent, so you can shop worry-free.
           </p>
         </section>
 
-        <section className={styles.faq}>
+        <section className={styles.section}>
           <h2>Frequently Asked Questions</h2>
           <div className={styles.faqItem}>
             <h3>How can I track my order?</h3>

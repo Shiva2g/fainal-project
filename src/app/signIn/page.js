@@ -7,8 +7,8 @@ const SignIn = () => {
     <div>
     
       <main className={styles.main}>
-        <div>
-          <a href="#" className={styles.backLink}>&lt; Back to previous page</a>
+        <div className={styles.backLink}>
+          <a href="/" >&lt; Back to previous page</a>
         </div>
         <div className={styles.container}>
           <h1>Sign In</h1>

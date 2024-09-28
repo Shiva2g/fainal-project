@@ -41,33 +41,33 @@ export default function Home() {
               <Image src="/assets/images/icons/vertical_line.png" width={50} height={50} alt="Deals Icon" />
             </div>
             <div className={styles.lastProText}>
-              <h2>Deals</h2>
+              <h2>Product Line</h2>
             </div>
             <div className={styles.verticalLineIcon}>
               <Image src="/assets/images/icons/vertical_line.png" width={35} height={35} alt="Deals Icon" />
             </div>
           </div>
           <div className={styles.dealsItem}>
-            <a href="#">
+            <Link href="#">
             <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
               <p>Laptop</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
             <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
               <p>Smartphone</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
             <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
               <p>Camera</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
             <span className={`${styles.icon} material-symbols-outlined`}>stadia_controller</span>
               <p>Gaming Console</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
             <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
               <p>HeadPhone</p>
-            </a>
+            </Link>
           </div>
         </section>
 

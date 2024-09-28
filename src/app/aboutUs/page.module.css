@@ -5,7 +5,7 @@
   margin: 2% 5%;
 }
 .heroSection {
-  background-image: url('/public/assets/images/about-us.jpg');
+  background-image: url('/assets/images/about-us.jpg');
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -15,7 +15,7 @@
   padding: 5%;
   margin-left: 10%;
 }
-section {
+.section {
   background-color: white;
   padding: 3% 5%;
   margin-bottom: 20px;
@@ -31,31 +31,28 @@ section {
   height: 150px;
 }
 
-h2 {
+.main h2 {
   margin-bottom: 10px;
 }
 
-p {
+.intro p {
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin: 10px 0;
   text-align: justify;
 }
 
-ul {
+.main ul {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-.trust ul li {
-  margin-bottom: 10px;
-}
-.services ul li {
+.section ul li {
   margin-bottom: 10px;
 }
 
 .faqItem h3 {
   margin-bottom: 5px;
-  color: #019889;
+  color: #0479d9;
 }
 
 .faqItem p {

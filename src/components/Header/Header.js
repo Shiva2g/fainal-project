@@ -8,9 +8,9 @@ const Header = () => {
     <header className={Styles.header}>
       <div className={Styles.topHeader}>
         <div className={Styles.logo}>
-          <a href="#">
+          <Link href="/">
             <Image className={Styles.myLogo} src="/assets/images/logo1.png" width={155} height={50} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <div className={Styles.searchBar}>
           <input type="text" placeholder="Search for products..." />
@@ -23,38 +23,39 @@ const Header = () => {
           <Link href="/checkOut" passHref>
             <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
             <span>Cart</span>
-          </Link>
+          </Link> &nbsp;&nbsp;
           <Link href="/signIn" passHref>
-            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={30} alt="Account" /> Account
+            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" /> Sign In
           </Link>
         </div>
       </div>
+
       {/* Nav bar Section */}
       <nav className={Styles.nav}>
         <ul>
           <li>
-            <a href="#">
+            <Link href="#">
               <Image src="/assets/images/icons/menu.png" className={Styles.menuIco} width={30} height={30} alt="Menu" />
-            </a>
+            </Link>
           </li>
           <li className={Styles.dropdown}>
-            <a href="#">Products</a>
+            <Link href="/search">Products</Link>
             <div className={Styles.dropdownContent}>
-              <a href="#">Mobile & Accessories</a>
+              <Link href="/addCart">Mobile & Accessories</Link>
               <hr />
-              <a href="#">Laptops & Accessories</a>
+              <Link href="/addCart">Laptops & Accessories</Link>
               <hr />
-              <a href="#">Cameras & Photography</a>
+              <Link href="/addCart">Cameras & Photography</Link>
               <hr />
-              <a href="#">Gaming & Accessories</a>
+              <Link href="/addCart">Gaming & Accessories</Link>
               <hr />
-              <a href="#">HeadPhone</a>
+              <Link href="/addCart">HeadPhone</Link>
             </div>
           </li>
-          <li><a href="compare">Compare & Analyze</a></li>
-          <li><a href="#">Tech News</a></li>
-          <li><a href="#">Deals</a></li>
-          <li><a href="aboutUs">About Us</a></li>
+          <li><Link href="/compare">Compare & Analyze</Link></li>
+          <li><Link href="#">Tech News</Link></li>
+          <li><Link href="#">Deals</Link></li>
+          <li><Link href="/aboutUs">About Us</Link></li>
           
         </ul>
       </nav>

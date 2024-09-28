@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 import styles from "./page.module.css";
 import "./globals.css"; // Assuming global styles
 
@@ -7,7 +8,7 @@ const CreateAccount = () => {
     <div>
       <main className={styles.main}>
         <div>
-          <a href="#" className={styles.backLink}>&#60; Back to previous page</a>
+          <Link href="#" className={styles.backLink}>&#60; Back to previous page</Link>
         </div>
         <div className={styles.container}>
           <div className={styles.formContainer}>
@@ -48,10 +49,10 @@ const CreateAccount = () => {
 
             <p>
               By creating an account, you agree to TechNest's{" "}
-              <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+              <Link href="#">Conditions of Use</Link> and <Link href="#">Privacy Notice</Link>.
             </p>
             <p>
-              Already have an account? <a href="#">Sign in</a>
+              Already have an account? <Link href="#">Sign in</Link>
             </p>
           </div>
         </div>

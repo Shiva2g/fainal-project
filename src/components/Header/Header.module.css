@@ -107,20 +107,26 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 14px;
 }
 
-.shoppingCart,
-.account {
+.shoppingCart {
   padding-right: 5px;
   width: 30px;
   height: 30px;
 }
+.account {
+  padding-right: 2px;
+  margin-left: 5px;
+  width: 30px;
+  height: 26px;
+}
 
 .headerIcons a:hover {
-  font-size: 15px;
+  color: #edfe82;
+  font-weight: 500;
   transition: 0.15s;
 }
+
 
 /* nav bar */
 .nav {
@@ -151,7 +157,7 @@
 
 .nav ul li a:hover {
   color: #014aca;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .menuIco {

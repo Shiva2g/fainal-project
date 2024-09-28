@@ -18,9 +18,14 @@ body {
   font-family: 'Material Symbols Outlined'; 
 }
 a:visited {
-  color: rgb(130, 130, 130);    
+  color: rgb(137, 130, 130);    
 }
-
+a {
+  color: rgb(147, 145, 145);
+}
+a:active{
+  color: rgb(147, 145, 145);
+}
 
 @media (prefers-color-scheme: dark) {
   html {

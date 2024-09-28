@@ -1,29 +1,30 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 
 const CheckOut = () => {
   return (
     <div>
-      <header className={styles.header}>
+        {/* <header className={styles.header}>
         <div className={styles.topHeader}>
           <div className={styles.logo}>
-            <a href="#"><Image className={styles.myLogo} src="/assets/images/logo1.png" alt="Logo" /></a>
+            <Link href="#"><Image className={styles.myLogo} src="/assets/images/logo1.png" alt="Logo" width={30} height={30} /></Link>
           </div>
           <div className={styles.searchBar}>
             <input type="text" placeholder="Search for products..." />
             <button type="submit">
-              <Image className={styles.iconSearch} src="/assets/images/icons/search-icon.png" alt="Search Icon" />
+              <Image className={styles.iconSearch} src="/assets/images/icons/search-icon.png" alt="Search Icon" width={30} height={30}/>
               <div className={styles.tooltip}>Search</div>
             </button>
           </div>
           <div className={styles.headerIcons}>
             <div className={styles.checkoutItem}>Checkout (3 items)</div>
-            <a href="#"><Image src="/assets/images/icons/shopping_cart.png" className={styles.shoppingCart} alt="Cart" /> Cart</a>
-            <a href="#"><Image src="/assets/images/icons/account.png" className={styles.account} alt="Account" /> Account</a>
+            <Link href="#"><Image src="/assets/images/icons/shopping_cart.png" className={styles.shoppingCart} alt="Cart" width={30} height={30}/> Cart</Link>
+            <Link href="#"><Image src="/assets/images/icons/account.png" className={styles.account} alt="Account" width={30} height={30}/> Account</Link>
+            </div>
           </div>
-        </div>
-      </header>
+        </header> */}
 
       <div className={styles.main}>
         <div className={styles.pageTitle}>Review your order</div>
@@ -36,14 +37,23 @@ const CheckOut = () => {
                 Delivery date: Tuesday, September 10
               </div>
               <div className={styles.cartItemDetailsGrid}>
-                <Image className={styles.productImage} src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook" />
+                <Image className={styles.productImage} src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook" width={100} height={100}/>
                 <div className={styles.cartItemDetails}>
                   <div className={styles.productName}>ASUS Zenbook Duo (2024) UX8406</div>
                   <div className={styles.productPrice}>$1599</div>
                   <div className={styles.productQuantity}>
                     <span>Quantity: <span className={styles.quantityLabel}>2</span></span>
-                    <span className={styles.updateQuantityLink}>Update</span>
-                    <span className={styles.deleteQuantityLink}>Delete</span>
+                    <div className={styles.updateQuantityLink}>
+                    <div className={styles.quantitySelector}>
+                    <button className={styles.quantityBtn}>-</button>
+                    <span>1</span>
+                    <button className={styles.quantityBtn}>+</button>
+                    
+                  </div>
+                    
+
+                    </div>
+                    <button className={styles.deleteQuantity}>Delete</button>
                   </div>
                 </div>
                 <DeliveryOptions optionName="delivery-option-1" />
@@ -56,7 +66,7 @@ const CheckOut = () => {
                 Delivery date: Wednesday, September 15
               </div>
               <div className={styles.cartItemDetailsGrid}>
-                <Image className={styles.productImage} src="/assets/images/products/phone/Apple iPhone 15 Pro Max 512GB - White Titanium.jpg" alt="iPhone 15 Pro Max" />
+                <Image className={styles.productImage} src="/assets/images/products/phone/Apple iPhone 15 Pro Max 512GB - White Titanium.jpg" alt="iPhone 15 Pro Max" width={30} height={30}/>
                 <div className={styles.cartItemDetails}>
                   <div className={styles.productName}>Apple iPhone 15 Pro Max 512GB - White Titanium</div>
                   <div className={styles.productPrice}>$1220</div>
