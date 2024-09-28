@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Hero from "../components/Hero/Hero";
 import Category from "../components/Category/Category";
+import ItemBox from "../components/ItemBox/ItemBox";
 
 export default function Home() {
   return (
@@ -37,35 +38,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.productGrid}>
-            <div className={styles.productItem}>
-              <div className={styles.proImage}>
-                <Image
-                  src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" width={250} height={250}
-                  alt="ASUS Zenbook"
-                />
-                <div className={styles.proLike}>
-                  <span className="material-symbols-outlined">favorite</span>
-                </div>
-              </div>
-              <div>
-                <p className={styles.proTitle}>ASUS Zenbook Duo (2024) UX8406</p>
-                <p className={styles.proInfo}>
-                  Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
-                </p>
-              
-              </div>
-              <div className={styles.proRating}>
-                  <Image src="/assets/images/ratings/rating-35.png" width={35} height={35} alt="Rating" /> (58 Reviews)
-                </div>
-                <div className={styles.subInfoPro}>
-                  <div className={styles.infoButton}>
-                    <button>View Details</button>
-                  </div>
-                  <div className={styles.infoPrice}>
-                    <p>Price $1,399</p>
-                  </div>
-                </div>
-            </div>
+            <ItemBox/>
             <div className={styles.productItem}>
               <div className={styles.proImage}>
                 <Image
