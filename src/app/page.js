@@ -2,7 +2,8 @@ import Link from "next/link";
 import "./globals.css";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Hero from "../components/Hero/Hero"
+import Hero from "../components/Hero/Hero";
+import Category from "../components/Category/Category";
 
 export default function Home() {
   return (
@@ -22,28 +23,8 @@ export default function Home() {
               <Image src="/assets/images/icons/vertical_line.png" width={35} height={35} alt="Deals Icon" />
             </div>
           </div>
-          <div className={styles.dealsItem}>
-            <Link href="#">
-            <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
-              <p>Laptop</p>
-            </Link>
-            <Link href="#">
-            <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
-              <p>Smartphone</p>
-            </Link>
-            <Link href="#">
-            <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
-              <p>Camera</p>
-            </Link>
-            <Link href="#">
-            <span className={`${styles.icon} material-symbols-outlined`}>stadia_controller</span>
-              <p>Gaming Console</p>
-            </Link>
-            <Link href="#">
-            <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
-              <p>HeadPhone</p>
-            </Link>
-          </div>
+          <Category/>
+          
         </section>
 
         <section className={styles.latestProducts}>
