@@ -1,0 +1,113 @@
+.cartItemContainer,
+.paymentSummary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  padding: 18px;
+  background-color: #fff;
+}
+
+.cartItemContainer {
+  margin-bottom: 12px;
+}
+.productImage {
+  max-width: 100%;
+  max-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.deliveryDate {
+  color: #014bca;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+.cartItemDetailsGrid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 25px;
+}
+
+@media (max-width: 1000px) {
+  .cartItemDetailsGrid {
+    grid-template-columns: 100px 1fr;
+    row-gap: 30px;
+  }
+}
+.productName {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.productPrice {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.productQuantity {
+  margin-left: 3px;
+}
+.productQuantity {
+  font-weight: bold;
+}
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.quantityBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #014aca;
+  font-size: 16px;
+  background-color: #e5ebf5;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.deleteQuantity{
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+  border: 1px solid #014aca;
+  margin-top: 11px;
+  margin-bottom: 15px;
+  cursor: pointer; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .deliveryOptions {
+    grid-column: 1 / span 2;
+  }
+}
+
+.deliveryOptionsTitle {
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.deliveryOption {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.deliveryOptionInput {
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.deliveryOptionDate {
+  color: #014bca;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.deliveryOptionPrice {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}

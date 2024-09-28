@@ -2,63 +2,19 @@ import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
+import  PurchaseList from "../../components/PurchaseList/PurchaseList";
 
 const CheckOut = () => {
   return (
     <div>
-        {/* <header className={styles.header}>
-        <div className={styles.topHeader}>
-          <div className={styles.logo}>
-            <Link href="#"><Image className={styles.myLogo} src="/assets/images/logo1.png" alt="Logo" width={30} height={30} /></Link>
-          </div>
-          <div className={styles.searchBar}>
-            <input type="text" placeholder="Search for products..." />
-            <button type="submit">
-              <Image className={styles.iconSearch} src="/assets/images/icons/search-icon.png" alt="Search Icon" width={30} height={30}/>
-              <div className={styles.tooltip}>Search</div>
-            </button>
-          </div>
-          <div className={styles.headerIcons}>
-            <div className={styles.checkoutItem}>Checkout (3 items)</div>
-            <Link href="#"><Image src="/assets/images/icons/shopping_cart.png" className={styles.shoppingCart} alt="Cart" width={30} height={30}/> Cart</Link>
-            <Link href="#"><Image src="/assets/images/icons/account.png" className={styles.account} alt="Account" width={30} height={30}/> Account</Link>
-            </div>
-          </div>
-        </header> */}
-
+        
       <div className={styles.main}>
         <div className={styles.pageTitle}>Review your order</div>
 
         <div className={styles.checkoutGrid}>
           <div className={styles.orderSummary}>
             { /* Order Item 1 */ }
-            <div className={styles.cartItemContainer}>
-              <div className={styles.deliveryDate}>
-                Delivery date: Tuesday, September 10
-              </div>
-              <div className={styles.cartItemDetailsGrid}>
-                <Image className={styles.productImage} src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook" width={100} height={100}/>
-                <div className={styles.cartItemDetails}>
-                  <div className={styles.productName}>ASUS Zenbook Duo (2024) UX8406</div>
-                  <div className={styles.productPrice}>$1599</div>
-                  <div className={styles.productQuantity}>
-                    <span>Quantity: <span className={styles.quantityLabel}>2</span></span>
-                    <div className={styles.updateQuantityLink}>
-                    <div className={styles.quantitySelector}>
-                    <button className={styles.quantityBtn}>-</button>
-                    <span>1</span>
-                    <button className={styles.quantityBtn}>+</button>
-                    
-                  </div>
-                    
-
-                    </div>
-                    <button className={styles.deleteQuantity}>Delete</button>
-                  </div>
-                </div>
-                <DeliveryOptions optionName="delivery-option-1" />
-              </div>
-            </div>
+            <PurchaseList/>
 
             { /* Order Item 2 */ }
             <div className={styles.cartItemContainer}>
