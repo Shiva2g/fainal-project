@@ -167,6 +167,7 @@
   width: 330px; 
   text-align: left; 
   position: relative;
+  height: 450px;
 }
 .proLike {
   position: absolute;
@@ -197,6 +198,7 @@
   font-weight: bold; 
   margin-bottom: 15px; 
   color: #0044ba; 
+  flex-grow: 1;
 }
 
 .productItem .proInfo {
@@ -215,6 +217,8 @@
   font-size: 12px;
   align-items: center;
   color: #6e6e6e;
+  position: absolute;
+  bottom: 80px;
 }
 
 .productItem button:hover {
@@ -230,7 +234,13 @@
   align-items: center;
   padding-top: 5px;
   padding-bottom: 10px;
+  margin-top: auto;
+  position: absolute;
+  bottom: 20px; 
+  left: 20px; 
+  right: 20px;
 }
+
 .productItem .infoButton {
   text-align: left;
 }

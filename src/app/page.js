@@ -96,7 +96,9 @@ export default function Home() {
                 <p className={styles.proInfo}>
                   Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
                 </p>
-                <div className={styles.proRating}>
+              
+              </div>
+              <div className={styles.proRating}>
                   <Image src="/assets/images/ratings/rating-35.png" width={35} height={35} alt="Rating" /> (58 Reviews)
                 </div>
                 <div className={styles.subInfoPro}>
@@ -107,7 +109,6 @@ export default function Home() {
                     <p>Price $1,399</p>
                   </div>
                 </div>
-              </div>
             </div>
             <div className={styles.productItem}>
               <div className={styles.proImage}>
