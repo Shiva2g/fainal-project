@@ -2,15 +2,17 @@
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
+import ItemBox from "../../components/ItemBox/ItemBox"
 
 const Search = () => {
   return (
     <>
     <main className={styles.main}>
       <div className={styles.addressPath}>
-        <Link href="#">Home</Link> {'>'} <Link href="#">Laptops & Accessories</Link> {'>'} <Link href="#">Laptops & MacBooks</Link> {'>'} <Link href="#">Windows Laptops</Link>
+        <Link href="#">Home</Link> {'>'} <Link href="#">Products</Link> {'>'} <Link href="#">Laptops & Accessories</Link> 
       </div>
       <div className={styles.container}>
+        
         {/* Sidebar */}
         <aside className={styles.sidebar}>
           <h2>Categories</h2>
@@ -99,34 +101,11 @@ const Search = () => {
           </div>
 
           {/* Product Grid */}
+          
           <div className={styles.productGrid}>
-            <div className={styles.productItem}>
-              <div className={styles.proImage}>
-                <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="ASUS Zenbook Duo Image" width={500} height={500} />
-                <div className={styles.proLike}>
-                  <span className="material-symbols-outlined">favorite</span>
-                </div>
-              </div>
-              <div>
-                <p className={styles.proTitle}>
-                  ASUS Zenbook Duo (2024) UX8406
-                </p>
-                <p className={styles.proInfo}>
-                  Revolutionary laptop with Apple's M2 chip for unparalleled performance and battery life.
-                </p>
-                <div className={styles.proRating}>
-                  <Image src="/assets/images/ratings/rating-35.png" alt="Rating 35" width={100} height={20} /> (58 Review)
-                </div>
-                <div className={styles.subInfoPro}>
-                  <div className={styles.infoButton}>
-                    <button>View Details</button>
-                  </div>
-                  <div className={styles.infoPrice}>
-                    <p>Price $1,399</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ItemBox/>
+            <ItemBox/>
+            <ItemBox/>
 
             {/* Add other product items similarly */}
           </div>
