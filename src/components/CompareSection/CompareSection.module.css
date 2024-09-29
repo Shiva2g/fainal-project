@@ -1,0 +1,67 @@
+/* مقایسه جدول اصلی */
+.comparisonTable {
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #014aca;
+}
+
+/* شبکه برای ستون‌های مقایسه */
+.comparisonGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ستون‌های مقایسه */
+.compareColumn {
+  width: 48%;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+}
+
+/* هدر ستون‌های مقایسه */
+.compareHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.compareHeader h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* دکمه بستن ستون */
+.closeBtn {
+  background-color: #eaeaea;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* عنوان بخش‌های مقایسه */
+.compareSection h4 {
+  margin-top: 10px;
+  color: #d32f2f;
+}
+
+/* آیتم‌های مشخصات محصول */
+.specItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.specItem span {
+  display: block;
+  color: #333;
+}
+
+.specItem:last-child {
+  border-bottom: none;
+}

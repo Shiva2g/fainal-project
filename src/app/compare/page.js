@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Category from "../../components/Category/Category";
 import ItemBox from "../../components/ItemBox/ItemBox";
 import CompareItem from "../../components/CompareItem/CompareItem";
+import CompareSection from "../../components/CompareSection/CompareSection";
 
 
 const Compare = () => {
@@ -76,7 +77,9 @@ const Compare = () => {
               <ItemBox/>
             </div>
           </section>
+          
         </div>
+        <CompareSection/>
       </main>
     </div>
   );
