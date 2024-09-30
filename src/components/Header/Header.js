@@ -48,7 +48,7 @@ const Header = () => {
               <hr />
               <Link href="/addCart">Cameras & Photography</Link>
               <hr />
-              <Link href="/addCart">Gaming & Accessories</Link>
+              <Link href="/addCart">Gaming Consoles</Link>
               <hr />
               <Link href="/addCart">HeadPhone</Link>
             </div>

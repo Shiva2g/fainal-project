@@ -12,10 +12,10 @@ const Search = () => {
         <Link href="#">Home</Link> {'>'} <Link href="#">Products</Link> {'>'} <Link href="#">Laptops & Accessories</Link> 
       </div>
       <div className={styles.container}>
-        
+
         {/* Sidebar */}
         <aside className={styles.sidebar}>
-          <h2>Categories</h2>
+          <h2>Properties</h2>
           <section>
             <h3>Product Properties</h3>
             <ul>
