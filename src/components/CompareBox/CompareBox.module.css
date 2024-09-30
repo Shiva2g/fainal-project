@@ -8,14 +8,16 @@
   position: relative;
   height: 480px;
 }
-.proLike {
+.proClose {
   position: absolute;
   top: 20px;
   right: 20px;
+  
 }
 
-.proLike .material-symbols-outlined {
-  color: #979798;
+.proClose .icon {
+  color: #7d7d7e;
+  cursor: pointer;
 }
 .productItem .proImage {
   display: flex;
@@ -95,18 +97,5 @@
   text-align: right;
   font-size: 14px;
   font-weight: bold;
-  color: #014aca;
-}
-.numberPurchase {
-  margin: 0 8px;
-}
-.removeItem {
-  margin-right: 40px;
-}
-.productItem a{
-  color: #014aca;
-  text-decoration: none;
-}
-.productItem a:hover{
   color: #014aca;
 }

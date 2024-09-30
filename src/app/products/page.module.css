@@ -1,0 +1,49 @@
+.main {
+  padding: 2% 5% 5% 5%;
+  margin: 5px 55px;
+}
+.container {
+  display: flex;
+  margin: 10px;
+}
+
+.main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.productGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+/* Category Section */
+.categorySection {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 25px;
+}
+.verticalLineIcon image {
+  height: 40px;
+}
+.categoryTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.categoryItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 35px 0;
+}
+
+

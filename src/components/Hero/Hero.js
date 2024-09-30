@@ -33,7 +33,7 @@ const Hero = () => {
     }, 500);
   };
 
-   //    برای تغییر خودکار تصویر
+   //     تغییر خودکار تصویر
    useEffect(() => {
     const interval = setInterval(() => {
       handleNextImage();

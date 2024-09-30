@@ -90,10 +90,10 @@
   flex: 1; 
   height: 400px;
 }
-.heroImage img {
+.heroImage image {
   transition: transform 0.3s ease;
 }
-.heroImage img:hover {
+.heroImage image:hover {
   transform: scale(1.1);
 }
 

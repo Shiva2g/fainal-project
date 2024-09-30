@@ -126,6 +126,14 @@
   font-weight: 500;
   transition: 0.15s;
 }
+.headerIcons a:visited {
+  color: rgb(252, 252, 252);    
+}
+
+.headerIcons a:active{
+  color: rgb(255, 255, 255);
+}
+
 
 
 /* nav bar */

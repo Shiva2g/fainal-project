@@ -56,7 +56,7 @@
   margin-top: 20px;
 }
 
-.socialIcons a img {
+.socialIcons a image {
   width: auto;
   height: 35px;
 }
@@ -126,13 +126,13 @@
   gap: 15px;
 }
 
-.paymentMethods p img {
+.paymentMethods p image {
   margin: 5px;
   align-items: center;
   text-align: center;
 }
 
-.paymentMethods img {
+.paymentMethods image {
   width: 40px;
   height: 35px;
   border-radius: 3px;

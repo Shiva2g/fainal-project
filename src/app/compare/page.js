@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 import Category from "../../components/Category/Category";
-import ItemBox from "../../components/ItemBox/ItemBox";
+import CompareBox from "../../components/CompareBox/compareBox";
 import CompareItem from "../../components/CompareItem/CompareItem";
 import CompareSection from "../../components/CompareSection/CompareSection";
 
@@ -72,9 +72,9 @@ const Compare = () => {
             </div>
 
             <div className={styles.productGrid}>
-              <ItemBox/>
+              <CompareBox/>
 
-              <ItemBox/>
+              <CompareBox/>
             </div>
           </section>
           

@@ -40,17 +40,17 @@ const Header = () => {
             </Link>
           </li>
           <li className={Styles.dropdown}>
-            <Link href="/search">Products</Link>
+            <Link href="/products">Products</Link>
             <div className={Styles.dropdownContent}>
-              <Link href="/addCart">Mobile & Accessories</Link>
+              <Link href="/search">Mobile & Accessories</Link>
               <hr />
-              <Link href="/addCart">Laptops & Accessories</Link>
+              <Link href="/search">Laptops & Accessories</Link>
               <hr />
-              <Link href="/addCart">Cameras & Photography</Link>
+              <Link href="/search">Cameras & Photography</Link>
               <hr />
-              <Link href="/addCart">Gaming Consoles</Link>
+              <Link href="/search">Gaming Consoles</Link>
               <hr />
-              <Link href="/addCart">HeadPhone</Link>
+              <Link href="/search">HeadPhone</Link>
             </div>
           </li>
           <li><Link href="/compare">Compare & Analyze</Link></li>

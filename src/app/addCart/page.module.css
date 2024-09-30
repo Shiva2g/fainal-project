@@ -22,7 +22,7 @@
   justify-content: flex-start;
 }
 
-.productImages img {
+.productImages image {
   width: 450px;
   height: 450px;
   border-radius: 8px;
@@ -35,7 +35,7 @@
   margin-right: 10px;
 }
 
-.thumbnailImages img {
+.thumbnailImages image {
   width: 105px;
   height: 105px;
   border-radius: 10px;
@@ -56,7 +56,7 @@
   color: #6e6e6e;
 }
 
-.proRating img {
+.proRating image {
   height: 15px;
   width: 80px;
   margin: 0;
