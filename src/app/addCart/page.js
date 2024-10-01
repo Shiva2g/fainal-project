@@ -10,7 +10,7 @@ const AddCart = () => {
       
       <main className={styles.main}>
         <div className={styles.breadcrumb}>
-          <p>Electronics {'>'} Laptop {'>'} New Arrival {'>'} Shop Laptop by type {'>'} <strong>Zenbook Duo (2024) UX8406</strong></p>
+          <p>Home {'>'} Laptops  {'>'} <strong>Zenbook Duo (2024) UX8406</strong></p>
         </div>
         <div className={styles.productContainer}>
           <div className={styles.productImages}>
@@ -27,7 +27,7 @@ const AddCart = () => {
             <h3>ASUS Zenbook Duo (2024) UX8406</h3>
             <p className={styles.description}>A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.</p>
             <div className={styles.proRating}>
-              <Image src="/assets/images/ratings/rating-35.png" alt="Rating" width={30} height={30}/> (58 Reviews)
+              <Image src="/assets/images/ratings/rating-35.png" alt="Rating" width={60} height={15}/> (58 Reviews)
             </div>
             <hr />
             <div className={styles.price}>
@@ -54,7 +54,7 @@ const AddCart = () => {
             </div>
             <div className={styles.buyButtons}>
               <button className={styles.buyNow}>Buy Now</button>
-              <button className={styles.addToCart}>Add to Cart</button>
+               
             </div>
 
             <div className={styles.deliveryInfo}>

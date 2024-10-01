@@ -1,17 +1,30 @@
+"use client";
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import styles from "./ItemBox.module.css";
-// import { useState } from 'react';
+import { useState } from 'react';
 
 
 const ItemBox = ({ image, name, description, price }) => {
-//  const [cartItems , setCartItems] =useState([])
+
+ const [quantity, setQuantity] =useState(0); //
+  const handleAdd = () => {          
+ setQuantity(quantity + 1);      
+ // onAddToCart();           
+};                       
+
+const handleSubtract = () => {   
+ if (quantity > 0) {             
+   setQuantity(quantity - 1); 
+ }
+};           //
+
   return (
     <div className={styles.productItem}>
       <div className={styles.proImage}>
         <Image
-          src={image} width={250} height={250}
+          src={image} width={200} height={200}
           alt="Product Image"
         />
         <div className={styles.proLike}>
@@ -19,7 +32,7 @@ const ItemBox = ({ image, name, description, price }) => {
         </div>
       </div>
       <div>
-        <p className={styles.proTitle}><Link href="/search">{name}</Link></p>
+        <p className={styles.proTitle}><Link href="./addCart">{name}</Link></p>
         <p className={styles.proInfo}>
         {description}
         </p>
@@ -30,7 +43,7 @@ const ItemBox = ({ image, name, description, price }) => {
       </div>
       <div className={styles.subInfoPro}>
         <div className={styles.infoButton}>
-        <button className={styles.addItem}>+</button><span className={styles.numberPurchase}>0</span><button className={styles.removeItem}>-</button> 
+        <button className={styles.addItem} onClick={handleAdd}>+</button><span className={styles.numberPurchase}> {quantity} </span><button className={styles.removeItem} onClick={handleSubtract}>-</button>  
         </div>
         <div className={styles.infoPrice}>
           <p>Price ${price}</p>
