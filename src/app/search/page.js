@@ -4,12 +4,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import ItemBox from "../../components/ItemBox/ItemBox"
 
-const Search = () => {
+const Search = ({searchParams}) => {
+  const {productType} = searchParams;
+
   return (
     <>
     <main className={styles.main}>
       <div className={styles.addressPath}>
-        <Link href="#">Home</Link> {'>'} <Link href="#">Products</Link> {'>'} <Link href="#">Laptops & Accessories</Link> 
+        <Link href="/">Home</Link> {'>'} <Link href="/products">Products</Link> {'>'} <Link href="#">Laptops & Accessories</Link> 
       </div>
       <div className={styles.container}>
 

@@ -10,9 +10,12 @@ import ItemBox from "../components/ItemBox/ItemBox";
 import { useEffect, useState } from 'react'; 
 import db from "./db/firestore";
 import { getDocs, collection } from 'firebase/firestore';
+import { signOut, useSession } from "next-auth/react"; //auth
 
 
 export default function Home () {
+  const {data} = useSession();  //auth
+  
 
   const [productData, setProductData] = useState([]); 
 
@@ -20,6 +23,7 @@ export default function Home () {
        const fetchProductData = async () => {
         const snapshot = await getDocs(collection(db, "laptop")); 
         const documents= snapshot.docs.map(doc => doc.data());
+        
         setProductData(documents); 
       };
 
@@ -67,96 +71,15 @@ export default function Home () {
                     image={doc.image} 
                   />
                 ))}
-              <ItemBox/>
-              
-              <div className={styles.productItem}>
-                <div className={styles.proImage}>
-                  <Image
-                    src="/assets/images/products/phone/iPhone 16 Pro.jfif" width={200} height={200}
-                    alt="iPhone 16 Pro"
-                  />
-                  <div className={styles.proLike}>
-                    <span className="material-symbols-outlined">favorite</span>
-                  </div>
-                </div>
-                <div>
-                  <p className={styles.proTitle}>iPhone 16 Pro (2024)</p>
-                  <p className={styles.proInfo}>
-                  Titanium design with larger 6.3‑inch Super Retina XDR display, footnote 1 durable, latest-generation Ceramic Shield, Action button, and USB-C with USB 3 speeds.
-                  </p>
-                  <div className={styles.proRating}>
-                    <Image src="/assets/images/ratings/rating-35.png" width={65} height={15} alt="Rating" /> (24 Reviews)
-                  </div>
-                  <div className={styles.subInfoPro}>
-                    <div className={styles.infoButton}>
-                      <button>View Details</button>
-                    </div>
-                    <div className={styles.infoPrice}>
-                      <p>Price From $1449</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.productItem}>
-                <div className={styles.proImage}>
-                  <Image
-                    src="/assets/images/products/camera/Canon EOS R5 C Mirrorless2.webp" width={200} height={160}
-                    alt="Canon EOS R5 C Mirrorless"
-                  />
-                  <div className={styles.proLike}>
-                    <span className="material-symbols-outlined">favorite</span>
-                  </div>
-                </div>
-                <div>
-                  <p className={styles.proTitle}>Canon EOS R5 C Mirrorless (2024) </p>
-                  <p className={styles.proInfo}>
-                  Canon EOS R5 C Mirrorless Digital Cinema Camera + RF 24-105mm F4 L is USM Lens Kit (International Model).
-                  </p>
-                  <div className={styles.proRating}>
-                    <Image src="/assets/images/ratings/rating-35.png" width={65} height={15} alt="Rating" /> (100 Reviews)
-                  </div>
-                  <div className={styles.subInfoPro}>
-                    <div className={styles.infoButton}>
-                      <button>View Details</button>
-                    </div>
-                    <div className={styles.infoPrice}>
-                      <p>Price $5,654.99</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.productItem}>
-                <div className={styles.proImage}>
-                  <Image
-                    src="/assets/images/products/headphone/AirPods Max2.jfif" width={230} height={200}
-                    alt="AirPods Max"
-                  />
-                  <div className={styles.proLike}>
-                    <span className="material-symbols-outlined">favorite</span>
-                  </div>
-                </div>
-                <div>
-                  <p className={styles.proTitle}>AirPods Max (2024)</p>
-                  <p className={styles.proInfo}>
-                    The ultimate over-ear personal listening experience — now in fresh new colors. AirPods Max deliver stunningly detailed, high-fidelity audio.
-                  </p>
-                  <div className={styles.proRating}>
-                    <Image src="/assets/images/ratings/rating-35.png" width={65} height={15} alt="Rating" /> (18 Reviews)
-                  </div>
-                  <div className={styles.subInfoPro}>
-                    <div className={styles.infoButton}>
-                      <button>View Details</button>
-                    </div>
-                    <div className={styles.infoPrice}>
-                      <p>Price $549</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
+                
             </div>
           </section>
         </main>
+      {/*  {date ? (<div><p>Welcome, {data.user.name}</p><Image src={data.user.image} width={100} height={100} alt='pic' /><button onClick={()=> signOut()}>sign out</button>
+  </div>) : (<div>
+    <Link href="/api/auth/signin">Login</Link>
+  </div>)}
+  */}
       </>
     );
 }

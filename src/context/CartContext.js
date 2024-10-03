@@ -1,12 +1,13 @@
-// CartContext.js
+'use client';
 import React, { createContext, useState } from 'react';
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState(0); // تعداد محصولات در سبد خرید
+  const [cartItems, setCartItems] = useState([]); // تعداد محصولات در سبد خرید
 
-  const addToCart = () => {
+  const addToCart = (product) => {
+
     setCartItems(cartItems + 1); // افزایش تعداد محصولات
   };
 
