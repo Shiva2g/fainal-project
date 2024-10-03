@@ -6,7 +6,7 @@ import styles from "./ItemBox.module.css";
 import { useState } from 'react';
 
 
-const ItemBox = ({ image, name, description, price }) => {
+const ItemBox = ({ image, name, description, price, store }) => {
 
  const [quantity, setQuantity] =useState(0); //
   const handleAdd = () => {          
@@ -32,7 +32,9 @@ const handleSubtract = () => {
         </div>
       </div>
       <div>
-        <p className={styles.proTitle}><Link href="./addCart">{name}</Link></p>
+        <p className={styles.proTitle}>
+        <Link href={`/addCart?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&price=${price}&image=${encodeURIComponent(image)}&color=${encodeURIComponent(store)}`}>
+        {name}</Link></p>
         <p className={styles.proInfo}>
         {description}
         </p>

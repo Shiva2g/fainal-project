@@ -7,7 +7,8 @@ import styles from "./page.module.css";
 import Hero from "../components/Hero/Hero";
 import Category from "../components/Category/Category";
 import ItemBox from "../components/ItemBox/ItemBox";
-import { useEffect, useState } from 'react'; 
+import { useEffect, useState, useContext  } from 'react'; 
+
 import db from "./db/firestore";
 import { getDocs, collection } from 'firebase/firestore';
 import { signOut, useSession } from "next-auth/react"; //auth
@@ -16,8 +17,8 @@ import { signOut, useSession } from "next-auth/react"; //auth
 export default function Home () {
   const {data} = useSession();  //auth
   
-
-  const [productData, setProductData] = useState([]); 
+  const [productData, setProductData] = useState([]); //db
+  
 
     useEffect(() => {
        const fetchProductData = async () => {
@@ -71,15 +72,23 @@ export default function Home () {
                     image={doc.image} 
                   />
                 ))}
-                
             </div>
           </section>
+
+            {/* autt  */}         
+            <div> 
+            {data ? (<div>
+            <p>Welcome, {data.user.name}</p>
+            <Image src={data.user.image} width={100} height={100} alt='profile picture' />
+            <button onClick={() => signOut()}>Sign out</button>
+            </div>
+            ) : (<div>
+              <Link href="/api/auth/signin">Login</Link>
+            </div>)}
+            </div>
+            
         </main>
-      {/*  {date ? (<div><p>Welcome, {data.user.name}</p><Image src={data.user.image} width={100} height={100} alt='pic' /><button onClick={()=> signOut()}>sign out</button>
-  </div>) : (<div>
-    <Link href="/api/auth/signin">Login</Link>
-  </div>)}
-  */}
+    
       </>
     );
 }

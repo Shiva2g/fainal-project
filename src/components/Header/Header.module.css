@@ -26,7 +26,8 @@
 }
 
 .myLogo {
-  height: 35px;
+  width: 150px;
+  height: auto;
 }
 
 .myLogo:hover {
@@ -111,7 +112,7 @@
 
 .shoppingCart {
   padding-right: 5px;
-  width: 30px;
+  width: auto;
   height: 30px;
 }
 .account {

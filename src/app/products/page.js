@@ -12,17 +12,14 @@ const Products = async () => {
 
   const categories = ["mobile", "laptop", "headphone", "Gaming", "camera" ];  
 
-  // استفاده از Promise.all برای فراخوانی همزمان تمام دسته‌ها
   const promises = categories.map((category) => {
     return getDocs(collection(db, category)).then((snapshot) =>
       snapshot.docs.map((doc) => doc.data())
     );
   });
 
-  // منتظر می‌مانیم تا تمام درخواست‌ها کامل شوند
   const results = await Promise.all(promises);
 
-  // ادغام تمام داده‌های دسته‌ها در یک آرایه واحد
   const allDocuments = results.flat();
 
 {/*  const snapshot = await getDocs(collection(db, "laptop"));
@@ -72,6 +69,7 @@ const Products = async () => {
                   description={doc.description} 
                   price={doc.Price} 
                   image={doc.image}
+                  store={doc.Store}
                 /> 
               ))}
             </div>

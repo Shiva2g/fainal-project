@@ -96,11 +96,15 @@
 .quantityBtn {
   width: 30px;
   height: 30px;
-  border: none;
   background-color: #ccc;
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+  background-color: transparent; 
+  
+  border: 1px solid #014aca;
+  font-size: 14px; 
 }
 
 .stock {
