@@ -1,10 +1,10 @@
 'use client';
 import React, { createContext, useState, useContext } from 'react';
 
-// ایجاد Context
+// Create Context
 const CartContext = createContext();
 
-// ایجاد یک Provider برای Context
+// Create a Provider for Context
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
@@ -12,14 +12,14 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find(item => item.name === product.name && item.color === product.color);
       if (existingProduct) {
-        // اگر محصول قبلاً وجود دارد، تعداد را افزایش می‌دهیم
+        // If the product already exists, increase the quantity
         return prevCart.map(item =>
           item.name === product.name && item.color === product.color
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       }
-      // اگر محصول جدید است، آن را به سبد خرید اضافه می‌کنیم
+      // If the product is new, add it to the cart
       return [...prevCart, { ...product, quantity: 1 }];
     });
   };
@@ -35,7 +35,7 @@ export const CartProvider = ({ children }) => {
               : item
           );
         } else {
-          // اگر تعداد به 1 برسد، محصول را حذف می‌کنیم
+          // If the quantity reaches 1, remove the product
           return prevCart.filter(item => !(item.name === product.name && item.color === product.color));
         }
       }
@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
 
   const getProductQuantity = (product) => {
     const existingProduct = cart.find(item => item.name === product.name && item.color === product.color);
-    return existingProduct ? existingProduct.quantity : 0; // اگر محصول موجود باشد، تعداد را برمی‌گرداند
+    return existingProduct ? existingProduct.quantity : 0; // If the product exists, return its quantity
   };
 
   return (
@@ -55,7 +55,7 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-//  hook Context
+// Context hook
 export const useCart = () => {
   return useContext(CartContext);
 };

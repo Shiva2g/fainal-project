@@ -1,11 +1,15 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import Styles from "./Header.module.css";
+import { useCart } from '../../context/CartContext'; // Import the useCart hook
 
 const Header = () => {
+  const { cart } = useCart(); // Use the useCart hook to get the cart
+  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); // Calculate total quantity
+
   return (
-    
     <header className={Styles.header}>
       <div className={Styles.topHeader}>
         <div className={Styles.logo}>
@@ -22,8 +26,13 @@ const Header = () => {
         </div>
         <div className={Styles.headerIcons}>
           <Link href="/checkOut" passHref>
-            <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
-            <span>Cart</span>
+          <div className={Styles.notification}>
+          <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
+          <div className={Styles.notificationCount}>
+          <span> {totalQuantity > 0 && `${totalQuantity}`}</span> {/* Show quantity if greater than 0 */} 
+          </div>
+          </div>
+            
           </Link> &nbsp;&nbsp;
           <Link href="/signIn" passHref>
             <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" /> Sign In
@@ -57,7 +66,6 @@ const Header = () => {
           <li><Link href="#">Tech News</Link></li>
           <li><Link href="#">Deals</Link></li>
           <li><Link href="/aboutUs">About Us</Link></li>
-          
         </ul>
       </nav>
     </header>

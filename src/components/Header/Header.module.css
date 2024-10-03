@@ -200,3 +200,18 @@
 .dropdown:hover .dropdownContent {
   display: block;
 }
+.notification{
+  position: relative;
+}
+.notificationCount{
+  position: absolute;
+  background-color: rgba(251, 249, 202, 0.8);
+  color: #014aca;
+  padding: 2px 5px;
+  font-size: 11px;
+  font-weight: bold;
+  top: -5px;
+  right: -8px;
+  border-radius: 30px;
+  border: solid 1px #e9fe00;
+}
