@@ -1,13 +1,16 @@
-'use client';
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import Styles from "./Header.module.css";
 import { useCart } from '../../context/CartContext'; // Import the useCart hook
+import { signOut, signIn,  useSession } from "next-auth/react"; //auth
 
 const Header = () => {
+//  const {data} = useSession();  //auth
   const { cart } = useCart(); // Use the useCart hook to get the cart
-  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); // Calculate total quantity
+  const totalQuantity = cart?.reduce((total, item) => total + item.quantity, 0) || 0; // Calculate total quantity
 
   return (
     <header className={Styles.header}>
@@ -35,7 +38,23 @@ const Header = () => {
             
           </Link> &nbsp;&nbsp;
           <Link href="/signIn" passHref>
-            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" /> Sign In
+            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" /> 
+            {/* {data && data.user ? ( 
+              <div className={Styles.userName}>
+                <p>{data.user.name}</p>
+              </div>
+            ) : null}
+          
+            {data ? (
+              <div>
+                <button className={Styles.btnSignOut} onClick={signOut}>Sign Out</button>
+              </div>
+              ) : (
+              <div>
+                <button className={Styles.btnLogin} onClick={signIn}>Login</button>
+              </div>
+                )} */}
+
           </Link>
         </div>
       </div>

@@ -11,14 +11,14 @@ const ItemBox = ({ image, name, description, price, store }) => {
  const [quantity, setQuantity] =useState(0); //
   const handleAdd = () => {          
  setQuantity(quantity + 1);      
- // onAddToCart();           
+// onAddToCart();           
 };                       
 
 const handleSubtract = () => {   
  if (quantity > 0) {             
    setQuantity(quantity - 1); 
  }
-};           //
+};        
 
   return (
     <div className={styles.productItem}>

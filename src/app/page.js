@@ -11,7 +11,7 @@ import { useEffect, useState, useContext  } from 'react';
 
 import db from "./db/firestore";
 import { getDocs, collection } from 'firebase/firestore';
-import { signOut, useSession } from "next-auth/react"; //auth
+import { signOut, signIn,  useSession } from "next-auth/react"; //auth
 
 
 export default function Home () {
@@ -75,7 +75,7 @@ export default function Home () {
             </div>
           </section>
 
-            {/* autt  */}         
+            {/* ault  */}         
             <div> 
             {data ? (<div>
             <p>Welcome, {data.user.name}</p>
@@ -83,7 +83,8 @@ export default function Home () {
             <button onClick={() => signOut()}>Sign out</button>
             </div>
             ) : (<div>
-              <Link href="/api/auth/signin">Login</Link>
+            
+              <button onClick={() => signIn()}>Sign in</button>
             </div>)}
             </div>
             

@@ -48,6 +48,7 @@ export const CartProvider = ({ children }) => {
     return existingProduct ? existingProduct.quantity : 0; // If the product exists, return its quantity
   };
 
+  
   return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, getProductQuantity }}>
       {children}
