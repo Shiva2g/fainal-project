@@ -13,7 +13,6 @@ const PurchaseList = ({ updateShippingCost }) => {
     price: 4.99,
     date: 'Wednesday, September 15'
   });
-  
 
   // تابع برای تنظیم گزینه انتخاب شده
   const handleDeliveryOptionChange = (option) => {

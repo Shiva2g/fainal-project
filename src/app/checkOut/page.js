@@ -31,7 +31,7 @@ const CheckOut = () => {
   );
 };
 
-// PaymentSummary component 
+// PaymentSummary componente 
 const PaymentSummary = ({ shippingCost }) => {
   const { cart } = useCart(); 
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
