@@ -6,6 +6,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css'; 
 import { useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+
+
 
 
 const AddCart = () => {
@@ -14,11 +17,17 @@ const AddCart = () => {
   const description = searchParams.get('description');
   const price = searchParams.get('price');
   const image = searchParams.get('image');
-  const store = searchParams.get('store');
+  const store = searchParams.get('Store');
 
   const { addToCart, removeFromCart, getProductQuantity } = useCart();
   const product = { name, description, price, image, store };
   const quantity = getProductQuantity(product);
+
+  const router = useRouter();
+
+  const handleCheckout = () => {
+    router.push('/checkOut');
+  };
 
   return (
     <div>
@@ -55,7 +64,6 @@ const AddCart = () => {
                 <span className={styles.colorOption} style={{ backgroundColor: '#aa9f80' }}></span>
                 <span className={styles.colorOption} style={{ backgroundColor: '#333' }}></span>
                 <span className={styles.colorOption} style={{ backgroundColor: '#e0e0e0' }}></span>
-                <span className={styles.colorOption} style={{ backgroundColor: '#ecc5c0' }}></span>
                 <span className={styles.colorOption} style={{ backgroundColor: '#bcc6cc' }}></span>
               </div>
             </div>
@@ -67,7 +75,7 @@ const AddCart = () => {
               <p> <span className={styles.stock}>Only ...{store} Items Left!</span> Don't miss it</p>
             </div>
             <div className={styles.buyButtons}>
-            <button onClick={() => addToCart(product)} className={styles.buyNow}>Buy Now</button>
+            <button onClick={handleCheckout}>Buy Now</button>
             </div>
 
             <div className={styles.deliveryInfo}>

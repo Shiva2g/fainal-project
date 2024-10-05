@@ -33,7 +33,7 @@ const handleSubtract = () => {
       </div>
       <div>
         <p className={styles.proTitle}>
-        <Link href={`/addCart?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&price=${price}&image=${encodeURIComponent(image)}&color=${encodeURIComponent(store)}`}>
+        <Link href={`/addCart?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&price=${price}&image=${encodeURIComponent(image)}&store=${encodeURIComponent(store)}`}>
         {name}</Link></p>
         <p className={styles.proInfo}>
         {description}
