@@ -17,15 +17,15 @@ const Search = ({searchParams}) => {
 
         {/* Sidebar */}
         <aside className={styles.sidebar}>
-          <h2>Properties</h2>
+          <h2>Properties</h2> <button type="submit">Apply Search</button>
           <section>
-            <h3>Product Properties</h3>
+            <h3>Product Categories</h3>
             <ul>
-              <li><input type="checkbox" /> Windows Laptops (32)</li>
-              <li><input type="checkbox" /> MacBook (3)</li>
-              <li><input type="checkbox" /> Chromebooks (4)</li>
-              <li><input type="checkbox" /> Gaming Laptops (15)</li>
-              <li><input type="checkbox" /> 2 in 1 Laptops (10)</li>
+              <li><input type="checkbox" /> Laptops (3)</li>
+              <li><input type="checkbox" /> HeadPhone (2)</li>
+              <li><input type="checkbox" /> Mobile (2)</li>
+              <li><input type="checkbox" /> Gaming (2)</li>
+              <li><input type="checkbox" /> Camera (2)</li>
             </ul>
           </section>
           <section>
@@ -39,10 +39,8 @@ const Search = ({searchParams}) => {
             <h3>Discount</h3>
             <ul>
               <li><input type="checkbox" /> On Sale (5)</li>
-              <li><input type="checkbox" /> Top Deals (11)</li>
-              <li><input type="checkbox" /> Latest and Greatest (3)</li>
-              <li><input type="checkbox" /> On Clearance (21)</li>
-              <li><input type="checkbox" /> Open Box (12)</li>
+              <li><input type="checkbox" /> Latest and Greatest (5)</li>
+              <li><input type="checkbox" /> On Deal (0)</li>
             </ul>
           </section>
           <section>
@@ -54,7 +52,6 @@ const Search = ({searchParams}) => {
               <label htmlFor="max-price">Max</label>
               <input type="number" id="max-price" name="max-price" placeholder="$5000" />
 
-              <button type="submit">Apply Price Range</button>
             </form>
           </section>
           <br />
@@ -62,8 +59,8 @@ const Search = ({searchParams}) => {
             <h3>Brands</h3>
             <ul>
               <li><input type="checkbox" /> Samsung</li>
-              <li><input type="checkbox" /> Dell</li>
-              <li><input type="checkbox" /> HP</li>
+              <li><input type="checkbox" /> Sony</li>
+              <li><input type="checkbox" /> Asus</li>
               <li><input type="checkbox" /> Apple</li>
             </ul>
           </section>
@@ -78,9 +75,9 @@ const Search = ({searchParams}) => {
           <section>
             <h3>Screen Size</h3>
             <ul>
-              <li><input type="checkbox" /> 13-14 inch</li>
-              <li><input type="checkbox" /> 15-16 inch</li>
-              <li><input type="checkbox" /> 17-18 inch</li>
+              <li><input type="checkbox" /> 14 inch</li>
+              <li><input type="checkbox" /> 15 inch</li>
+              <li><input type="checkbox" /> 16 inch</li>
             </ul>
           </section>
         </aside>
