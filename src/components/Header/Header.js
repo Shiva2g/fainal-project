@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Styles from "./Header.module.css";
 import { useCart } from '../../context/CartContext'; // Import the useCart hook
-import { signOut, signIn,  useSession } from "next-auth/react"; //auth
+// import { signOut, signIn,  useSession } from "next-auth/react"; //auth
 
 const Header = () => {
 //  const {data} = useSession();  //auth
@@ -32,7 +32,7 @@ const Header = () => {
           <div className={Styles.notification}>
           <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
           <div className={Styles.notificationCount}>
-          <span> {totalQuantity > 0 && `${totalQuantity}`}</span> {/* Show quantity if greater than 0 */} 
+          <span> {totalQuantity}</span> {/* Show quantity if greater than 0 */} 
           </div>
           </div>
             

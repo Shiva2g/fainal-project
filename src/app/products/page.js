@@ -69,6 +69,9 @@ const Products = async () => {
                   description={doc.description} 
                   price={doc.Price} 
                   image={doc.image}
+                  imageTwo={doc.image2}
+                  imageThree={doc.image3}
+                  imageFour={doc.image4}
                   store={doc.Store}
                 /> 
               ))}

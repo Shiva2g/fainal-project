@@ -18,9 +18,12 @@ const AddCart = () => {
   const price = searchParams.get('price');
   const image = searchParams.get('image');
   const store = searchParams.get('Store');
+  const imageTwo = searchParams.get('imageTwo');
+  const imageThree = searchParams.get('imageThree');
+  const imageFour = searchParams.get('imageFour');
 
   const { addToCart, removeFromCart, getProductQuantity } = useCart();
-  const product = { name, description, price, image, store };
+  const product = { name, description, price, image, store, imageTwo, imageThree, imageFour };
   const quantity = getProductQuantity(product);
 
   const router = useRouter();
@@ -38,12 +41,12 @@ const AddCart = () => {
         <div className={styles.productContainer}>
           <div className={styles.productImages}>
             <div className={styles.thumbnailImages}>
-              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop.webp" alt="Zenbook S 16" width={105} height={105}/>
-              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop1.webp" alt="Zenbook S 16 - Alt 1" width={105} height={105}/>
-              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop2.webp" alt="Zenbook S 16 - Alt 2" width={105} height={105}/>
-              <Image src="/assets/images/products/laptop/ASUS Zenbook S 16 (UM5606) OLED Laptop3.webp" alt="Zenbook S 16 - Alt 3" width={105} height={105}/>
+              <Image src={imageTwo} alt="image1" width={105} height={105}/>
+              <Image src={imageThree} alt="image2" width={105} height={105}/>
+              <Image src={imageFour} alt="image3" width={105} height={105}/>
+              <Image src={image} alt="image4" width={105} height={105}/>
             </div>
-            <Image src={image} alt="name" width={450} height={450}/>
+            <Image src={image} alt={name} width={450} height={450}/>
           </div>
 
           <div className={styles.productDetails}>
@@ -72,7 +75,7 @@ const AddCart = () => {
             <button onClick={() => removeFromCart(product)} className={styles.quantityBtn}>-</button>
             <span className={styles.numberPurchase}> {quantity}</span>
               <button onClick={() => addToCart(product)} className={styles.quantityBtn}>+</button>
-              <p> <span className={styles.stock}>Only ...{store} Items Left!</span> Don't miss it</p>
+              <p> <span className={styles.stock}> Only ...{store} Items Left!</span> Don't miss it</p>
             </div>
             <div className={styles.buyButtons}>
             <button onClick={handleCheckout}>Buy Now</button>

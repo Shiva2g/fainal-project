@@ -20,11 +20,14 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  
 }
 
 .productImages image {
   width: 450px;
   height: 450px;
+}
+.productImages img {
   border-radius: 8px;
 }
 
