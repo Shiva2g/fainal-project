@@ -1,6 +1,9 @@
 .main {
-  padding: 6%;
+  padding: 2% 6%;
   font-size: 14px;
+}
+.titleCategory {
+  font-weight: bold;
 }
 
 /* General Page Layout */

@@ -10,7 +10,7 @@ const Category = () => {
       <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
         <p>Laptop</p>
       </Link>
-      <Link href={{pathname:'/search' , query:{productType:'smartphone'}}}>
+      <Link href={{pathname:'/search' , query:{productType:'mobile'}}}>
       <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
         <p>Smartphone</p>
       </Link>
@@ -18,11 +18,11 @@ const Category = () => {
       <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
         <p>Camera</p>
       </Link>
-      <Link href={{pathname:'/search' , query:{productType:'gamingConsole'}}}>
+      <Link href={{pathname:'/search' , query:{productType:'Gaming'}}}>
       <span className={`${styles.icon} material-symbols-outlined`}>stadia_controller</span>
         <p>Gaming Console</p>
       </Link>
-      <Link href={{pathname:'/search' , query:{productType:'headPhone'}}}>
+      <Link href={{pathname:'/search' , query:{productType:'headphone'}}}>
       <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
         <p>HeadPhone</p>
       </Link>
