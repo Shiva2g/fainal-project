@@ -132,3 +132,117 @@
   bottom: 20px;
   right: 20px;
 }
+/* Media query for mobile devices up to 768px */
+@media (max-width: 768px) {
+  .main {
+    padding: 2% 2%;
+    margin: 5px 5px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack sidebar and main content vertically */
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .products {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .filterBar {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left for mobile */
+  }
+
+  .productGrid {
+    flex-direction: column;
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .categoryItem {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .compareItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .compareIcon {
+    width: 60px; /* Adjust icon size for mobile */
+    height: 60px;
+  }
+
+  .addButton {
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+}
+/* Media query for tablets and smaller laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .main {
+    padding: 2% 4%;
+    margin: 5px 30px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .products {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .filterBar {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productGrid {
+    gap: 20px;
+  }
+
+  .categoryItem {
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+  }
+}
+/* استایل‌های مخصوص برای صفحه‌نمایش‌های کمتر از 480px (مخصوص موبایل کوچک) */
+@media (max-width: 480px) {
+  .main {
+    margin: 1px;
+    padding: 3% 3%;
+  }
+
+  .categoryTitle {
+    font-size: 14px;
+  }
+
+  .filterBar {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .compareItem span {
+    font-size: 12px;
+  }
+
+  .searchInput, .searchButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

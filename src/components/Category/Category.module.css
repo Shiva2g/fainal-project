@@ -23,3 +23,44 @@
   background-color: #f2f2f2;
   transition: 0.18s;
 }
+
+/* Media Queries for responsive design */
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .dealsItem {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    margin: 20px 0; /* Reduce margin */
+  }
+  
+  .dealsItem .icon {
+    font-size: 50px; /* Reduce icon size */
+  }
+
+  .dealsItem a {
+    margin: 10px 0; /* Add spacing between items */
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .dealsItem {
+    justify-content: space-between; /* Space items evenly */
+  }
+
+  .dealsItem .icon {
+    font-size: 60px; /* Reduce icon size */
+  }
+}
+
+/* For larger screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .dealsItem {
+    justify-content: space-around; /* Maintain original spacing */
+  }
+
+  .dealsItem .icon {
+    font-size: 70px; /* Adjust icon size */
+  }
+}

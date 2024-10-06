@@ -215,3 +215,142 @@
   border-radius: 30px;
   border: solid 1px #e9fe00;
 }
+
+/* Mobile Styles for screens 480px and below */
+@media (max-width: 480px) {
+  .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+  }
+  
+  /* right-header */
+  .logo {
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+  }
+  
+  .myLogo {
+    width: 70px;
+    height: auto;
+  }
+  
+  /* middle-header */
+  .searchBar {
+    max-width: 60px;
+  }
+  
+  .searchBar input {
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+  }
+  
+  .searchBar button {
+    padding: 6px 10px;
+    width: 40px;
+    height: 26px;
+  }
+  
+  /* left side-header */
+  .headerIcons {
+    width: 150px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  /* nav bar */
+  .nav {
+    margin: 0;
+  }
+  .nav ul {
+    padding-left: 2px;
+  }
+
+  .nav ul li a {
+    font-size: 12px;
+    padding: 2px 2px;
+  }
+}
+
+/* Tablet Styles for screens 768px and below */
+@media (max-width: 768px) {
+  .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+  }
+  
+  /* right-header */
+  .logo {
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+  }
+  
+  .myLogo {
+    width: 70px;
+    height: auto;
+  }
+  
+  /* middle-header */
+  .searchBar {
+    max-width: 60px;
+  }
+  
+  .searchBar input {
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+  }
+  
+  .searchBar button {
+    padding: 6px 10px;
+    width: 40px;
+    height: 26px;
+  }
+  
+  /* left side-header */
+  .headerIcons {
+    width: 150px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  /* nav bar */
+  .nav {
+    margin: 0;
+  }
+  .nav ul {
+    padding-left: 2px;
+  }
+  
+  .nav ul li a {
+    font-size: 12px;
+    padding: 2px 2px;
+  }
+
+}
+
+/* Large Screen Styles for screens 1200px and below */
+@media (max-width: 1200px) {
+  .topHeader {
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav ul {
+    justify-content: space-between;
+  }
+
+  .nav ul li {
+    margin: 0 10px;
+  }
+}

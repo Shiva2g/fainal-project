@@ -112,3 +112,89 @@
 .searchForm button:hover {
   background-color: #e6eaef;
 }
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and product section */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    border-right: none; /* Remove right border */
+    border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+  }
+
+  .products {
+    width: 100%; /* Full width for products */
+  }
+
+  .filterBar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .filterOptions {
+    flex-direction: column; /* Stack filter options vertically */
+    gap: 10px; /* Adjust gap */
+  }
+
+  .filterOptions select {
+    max-width: 100%; /* Ensure select takes full width */
+  }
+}
+
+/* For tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and product section */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    border-right: none; /* Remove right border */
+    border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+  }
+
+  .products {
+    width: 100%; /* Full width for products */
+  }
+
+  .filterBar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .filterOptions {
+    flex-direction: column; /* Stack filter options vertically */
+    gap: 15px; /* Adjust gap */
+  }
+
+  .filterOptions select {
+    max-width: 100%; /* Ensure select takes full width */
+  }
+}
+
+/* For larger screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and product section */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    margin-bottom: 20px; /* Add spacing below sidebar */
+  }
+
+  .products {
+    width: 100%; /* Full width for products */
+  }
+
+  .filterBar {
+    padding: 25px; /* Adjust padding */
+  }
+
+  .filterOptions {
+    gap: 15px; /* Adjust gap */
+  }
+}

@@ -269,3 +269,65 @@
 .articleIcons .material-symbols-outlined:hover {
   color: #014aca;
 }
+
+/* Mobile styles for screens 480px and below */
+@media (max-width: 480px) {
+  .main {
+    padding: 2%;
+  }
+
+  .dealsSection {
+    padding: 10px;
+  }
+
+  .dealsTitle {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .latestProductsTitle {
+    justify-content: center; /* Center title */
+  }
+
+  .productGrid {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .productItem {
+    width: 90%; /* Full width on mobile */
+    height: auto; /* Auto height */
+    margin-bottom: 20px; /* Spacing between items */
+  }
+}
+
+/* Tablet styles for screens 768px and below */
+@media (max-width: 768px) {
+  .main {
+    padding: 3%;
+  }
+
+  .productGrid {
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+  }
+
+  .productItem {
+    width: 45%; /* Two items per row */
+    height: auto; /* Auto height */
+    margin: 10px; /* Margin between items */
+  }
+}
+
+/* Large screen styles for screens 1200px and below */
+@media (max-width: 1200px) {
+  .main {
+    padding: 4%;
+  }
+
+  .productItem {
+    width: 30%; /* Three items per row */
+    height: auto; /* Auto height */
+  }
+}

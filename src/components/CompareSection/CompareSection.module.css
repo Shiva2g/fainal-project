@@ -67,3 +67,83 @@
 .specItem:last-child {
   border-bottom: none;
 }
+
+/* برای موبایل (حداکثر 480px) */
+@media (max-width: 480px) {
+  .comparisonTable {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .comparisonGrid {
+    flex-direction: column; 
+  }
+
+  .compareColumn {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .compareHeader h3 {
+    font-size: 14px; 
+  }
+  
+  .closeBtn {
+    padding: 5px;
+    font-size: 12px; 
+  }
+
+  .compareSection h4 {
+    font-size: 14px; 
+  }
+}
+
+/* برای تبلت (حداکثر 768px) */
+@media (max-width: 768px) {
+  .comparisonTable {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .comparisonGrid {
+    flex-direction: column; 
+  }
+
+  .compareColumn {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .compareHeader h3 {
+    font-size: 15px; 
+  }
+  
+  .closeBtn {
+    padding: 5px;
+    font-size: 12px; 
+  }
+
+  .compareSection h4 {
+    font-size: 15px; 
+  }
+}
+
+/* برای لپ‌تاپ (حداکثر 1200px) */
+@media (max-width: 1200px) {
+  .comparisonTable {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .comparisonGrid {
+    flex-direction: row; 
+  }
+
+  .compareColumn {
+    width: 48%; 
+  }
+
+  .compareHeader h3 {
+    font-size: 16px; 
+ }
+}

@@ -4,6 +4,7 @@
   font-size: 14px;
 }
 
+
 .breadcrumb {
   padding: 10px 20px;
   margin-top: 20px;
@@ -166,4 +167,52 @@
 .deliveryInfo .icon {
   font-size: 16px;
   margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .productContainer {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .productImages {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .productImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .thumbnailImages {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .productDetails {
+    width: 100%;
+  }
+
+  .quantitySelector, .buyButtons {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .colorSelector {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

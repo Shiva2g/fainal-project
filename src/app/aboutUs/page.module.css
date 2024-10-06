@@ -58,3 +58,61 @@
 .faqItem p {
   margin-bottom: 15px;
 }
+
+/* برای صفحه‌های بزرگ‌تر از 1200px */
+@media (min-width: 1200px) {
+  .heroSection {
+    height: 500px;
+  }
+  .offerDetails {
+    width: 50%;
+  }
+}
+
+/* برای تبلت‌ها و صفحه‌های بین 768px و 1200px */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .heroSection {
+    height: 400px;
+  }
+  .offerDetails {
+    width: 60%;
+    margin-left: 5%;
+  }
+  .trust {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trustPic {
+    margin-top: 20px;
+    height: 200px;
+  }
+}
+
+/* برای موبایل‌ها و صفحه‌های کوچک‌تر از 768px */
+@media (max-width: 768px) {
+  .main {
+    margin: 3% 2%;
+  }
+  .heroSection {
+    height: 300px;
+    background-position: top;
+  }
+  .offerDetails {
+    width: 60%;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .trust {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trustPic {
+    margin-top: 20px;
+    height: 150px;
+  }
+  .section {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}

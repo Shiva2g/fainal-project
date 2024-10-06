@@ -123,3 +123,105 @@
     opacity: 0;
   }
 }
+
+
+/* Mobile Styles (up to 480px) */
+@media (max-width: 480px) {
+  .heroSection {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    font-size: 13px;
+  }
+
+  .offerDetails {
+    padding: 0;
+    text-align: center;
+  }
+
+  .heading1, .heading2, .heading4 {
+    font-size: 12px;
+  }
+
+  .shopButtons {
+    flex-direction: column;
+  }
+
+  .heroImage {
+    padding: 5px;
+    height: 20px;
+    width: -20px;
+    text-align: center;
+  }
+  .heroImage img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .heroContent button {
+    width: 100%; /* Full width buttons on mobile */
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet Styles (up to 768px) */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    font-size: 12px;
+  }
+
+  .heading1, .heading2, .heading4 {
+    font-size: 14px;
+  }
+
+  .shopButtons {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heroImage {
+    padding: 15px;
+    height: 300px;
+  }
+
+  .heroContent button {
+    width: auto; /* Adjust button width */
+    margin: 5px;
+  }
+}
+
+/* Desktop Styles (up to 1200px) */
+@media (max-width: 1200px) {
+  .heroSection {
+    margin: 20px;
+  }
+
+  .heroContent {
+    padding: 20px;
+    height: 450px; /* Slightly reduce height */
+  }
+
+  .heading1, .heading2, .heading4 {
+    font-size: 28px; /* Larger text for larger screens */
+  }
+
+  .heroImage {
+    height: 350px;
+  }
+}
+

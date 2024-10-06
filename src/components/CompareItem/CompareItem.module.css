@@ -17,3 +17,54 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .compareItem {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    text-align: center; /* Center text */
+  }
+
+  .compareIcon {
+    width: 30px; /* Smaller icon size */
+    height: 30px; /* Smaller icon size */
+  }
+
+  .addButton {
+    padding: 8px 12px; /* Increase button padding for touch targets */
+    font-size: 14px; /* Larger text for better readability */
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .compareItem {
+    justify-content: space-around; /* Adjust spacing for tablet layout */
+  }
+
+  .compareIcon {
+    width: 35px; /* Adjust icon size */
+    height: 35px; /* Adjust icon size */
+  }
+
+  .addButton {
+    padding: 6px 12px; /* Slightly larger padding */
+  }
+}
+
+/* Small desktop styles */
+@media (max-width: 1200px) {
+  .compareItem {
+    justify-content: space-between; /* Maintain spacing for small desktops */
+  }
+
+  .compareIcon {
+    width: 40px; /* Default icon size */
+    height: 40px; /* Default icon size */
+  }
+
+  .addButton {
+    padding: 5px 10px; /* Default button padding */
+  }
+}

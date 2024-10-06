@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
 import Category from "../../components/Category/Category";
-import CompareBox from "../../components/CompareBox/compareBox";
+import CompareBox from "../../components/CompareBox/CompareBox";
 import CompareItem from "../../components/CompareItem/CompareItem";
 import CompareSection from "../../components/CompareSection/CompareSection";
 
