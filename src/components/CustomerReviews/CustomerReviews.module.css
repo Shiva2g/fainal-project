@@ -1,0 +1,52 @@
+.customerReviews {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.customerReviews h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.customerReviews form {
+  display: flex;
+  flex-direction: column;
+}
+
+.customerReviews textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none; /* Prevent resizing */
+}
+
+.customerReviews button {
+  padding: 10px;
+  background-color: #ebecee;
+  border: solid 1px #0258bb;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.customerReviews button:hover {
+  background-color: #fdfdfe; /* Darker blue on hover */
+}
+
+.customerReviews ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.customerReviews li {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff; /* White background for reviews */
+}
