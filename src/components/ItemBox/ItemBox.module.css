@@ -8,6 +8,11 @@
   position: relative;
   height: 480px;
   margin-bottom: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productItem:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .proLike {
   position: absolute;

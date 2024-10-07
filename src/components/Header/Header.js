@@ -82,7 +82,7 @@ const Header = () => {
             </div>
           </li>
           <li><Link href="/compare">Compare & Analyze</Link></li>
-          <li><Link href="#">Tech News</Link></li>
+          <li><Link href="/techNews">Tech News</Link></li>
           <li><Link href="#">Deals</Link></li>
           <li><Link href="/aboutUs">About Us</Link></li>
         </ul>
