@@ -8,24 +8,31 @@ import CompareItem from "../../components/CompareItem/CompareItem";
 import CompareSection from "../../components/CompareSection/CompareSection";
 import db from '../db/firestore';
 import { useEffect, useState } from 'react';
-import { collection, getDocs, query, where } from 'firebase/firestore';
+import { collection, getDocs, query } from 'firebase/firestore';
 
 const Compare = () => {
-  const [selectedProducts, setSelectedProducts] = useState([]);  // برای نگه‌داری محصولات انتخاب شده
-  const [products, setProducts] = useState([]);  // برای نگه‌داری محصولات فچ شده
+  const [selectedProducts, setSelectedProducts] = useState([]);  
   const [category, setCategory] = useState('Laptop');  // دسته‌بندی پیش‌فرض
+  const [products, setProducts] = useState([]);  // برای نگه‌داری محصولات فچ شده
 
   // فچ کردن محصولات از Firebase بر اساس دسته‌بندی
   useEffect(() => {
     const fetchProducts = async () => {
-      const q = query(collection(db, 'products'), where('category', '==', category));
-      const querySnapshot = await getDocs(q);
-      const productsList = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-      setProducts(productsList);
+      try {
+        const q = query(collection(db, category));  // فچ بر اساس دسته‌بندی
+        const querySnapshot = await getDocs(q);
+        const fetchedProducts = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setProducts(fetchedProducts);
+      } catch (error) {
+        console.error("Error fetching products: ", error);
+      }
     };
 
     fetchProducts();
-  }, [category]);  // هربار که دسته‌بندی تغییر کرد دوباره محصولات فچ می‌شوند
+  }, [category]);  // فچ کردن مجدد وقتی دسته‌بندی تغییر کند
 
   const handleSelectProduct = (product) => {
     if (selectedProducts.length < 2 && !selectedProducts.includes(product)) {
@@ -34,12 +41,11 @@ const Compare = () => {
   };
 
   const handleCompare = () => {
-    // نمایش اطلاعات مقایسه‌شده در CompareSection
     console.log('Comparing:', selectedProducts);
   };
 
-  const handleCategoryChange = (category) => {
-    setCategory(category);  // تغییر دسته‌بندی
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory);  // تغییر دسته‌بندی
     setSelectedProducts([]);  // ریست کردن محصولات انتخاب‌شده
   };
 
@@ -62,15 +68,15 @@ const Compare = () => {
 
           <div className={styles.dealsItem}>
             <ul>
-              <li><input type="radio" name="category" onClick={() => handleCategoryChange('Laptop')} checked={category === 'Laptop'} /> <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
+              <li><input type="radio" name="category" onClick={() => handleCategoryChange('laptop')} checked={category === 'laptop'} /> <span className={`${styles.icon} material-symbols-outlined`}>laptop_mac</span>
               <p>Laptop</p></li>
-              <li><input type="radio" name="category" onClick={() => handleCategoryChange('Headphone')} checked={category === 'Headphone'} />   <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
+              <li><input type="radio" name="category" onClick={() => handleCategoryChange('headphone')} checked={category === 'headphone'} />   <span className={`${styles.icon} material-symbols-outlined`}>headset_mic</span>
               <p>HeadPhone</p></li>
-              <li><input type="radio" name="category" onClick={() => handleCategoryChange('Smartphone')} checked={category === 'Smartphone'} /> <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
+              <li><input type="radio" name="category" onClick={() => handleCategoryChange('mobile')} checked={category === 'mobile'} /> <span className={`${styles.icon} material-symbols-outlined`}>smartphone</span>
               <p>Smartphone</p></li>
               <li><input type="radio" name="category" onClick={() => handleCategoryChange('Gaming')} checked={category === 'Gaming'} /> <span className={`${styles.icon} material-symbols-outlined`}>stadia_controller</span>
               <p>Gaming Console</p></li>
-              <li><input type="radio" name="category" onClick={() => handleCategoryChange('Camera')} checked={category === 'Camera'} /> <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
+              <li><input type="radio" name="category" onClick={() => handleCategoryChange('camera')} checked={category === 'camera'} /> <span className={`${styles.icon} material-symbols-outlined`}>photo_camera</span>
               <p>Camera</p></li>
             </ul>
           </div>
@@ -83,7 +89,11 @@ const Compare = () => {
 
               <div className={styles.popularComparisons}>
                 {products.map((product) => (
-                  <CompareItem key={product.id} product={product} onSelect={handleSelectProduct} />
+                  <CompareItem 
+                    key={product.id} 
+                    product={product} 
+                    onSelect={handleSelectProduct}  // ارسال تابع به کامپوننت CompareItem
+                  />
                 ))}
               </div>
             </div>

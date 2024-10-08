@@ -48,8 +48,7 @@ const ItemBox = ({ image, name, description, price, store, imageTwo, imageThree,
         <Link href={`/addCart?name=${encodeURIComponent(name)}&description=${encodeURIComponent(description)}&price=${price}&image=${encodeURIComponent(image)}&store=${encodeURIComponent(store)}&imageTwo=${encodeURIComponent(imageTwo)}&imageThree=${encodeURIComponent(imageThree)}&imageFour=${encodeURIComponent(imageFour)}`}>
             <button>View Details</button>
           </Link>
-        {/*<button className={styles.addItem} onClick={handleAdd}>+</button>
-         <span className={styles.numberPurchase}> {quantity} </span><button className={styles.removeItem} onClick={handleSubtract}>-</button>   */}
+        
         </div>
         <div className={styles.infoPrice}>
           <p>Price ${price}</p>

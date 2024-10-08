@@ -1,10 +1,14 @@
 'use client';
+
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import NewsItem from '../../components/NewsItem/NewsItem';
 import NewsDetails from '../../components/NewsDetails/NewsDetails';
 import styles from './page.module.css';
 import { getDocs, collection } from 'firebase/firestore';
-import db from '../db/firestore'; 
+import db from '../db/firestore';
+import CustomerReviews from '../../components/CustomerReviews/CustomerReviews';
+ 
 
 const NewsPage = () => {
   const [newsList, setNewsList] = useState([]);
@@ -42,6 +46,9 @@ const NewsPage = () => {
 
   return (
     <main className={styles.main}>
+      <div className={styles.breadcrumb}>
+          <p><Link href="/">Home</Link> {'>'} <strong>Technology News</strong></p>
+        </div>
       <div className={styles.newsPage}>
         <div className={styles.mainNews}>
           {selectedNews ? (
@@ -49,6 +56,9 @@ const NewsPage = () => {
           ) : (
             <p>Please select a news item from the sidebar</p>
           )}
+          <div className={styles.review}>
+            <CustomerReviews />
+          </div>
         </div>
         <div className={styles.sidebar}>
           {newsList.map((news) => (

@@ -9,6 +9,9 @@
   flex: 3;
   padding: 20px;
 }
+.review {
+  margin: 20px 0;
+}
 
 .sidebar {
   flex: 1;
