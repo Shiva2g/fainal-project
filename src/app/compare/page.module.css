@@ -18,6 +18,9 @@
   border-radius: 5px;
   padding: 10px 20px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .verticalLineIcon image {
   height: 40px;
@@ -132,6 +135,47 @@
   bottom: 20px;
   right: 20px;
 }
+
+.dealsItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  
+}
+.dealsItem ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: center;
+  width: 100%;
+}
+
+.dealsItem li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px; 
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dealsItem li input {
+  margin-bottom: 8px; 
+}
+.dealsItem li:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.dealsItem .icon {
+  font-size: 80px;
+  color: #616161;
+  margin-bottom: 10px;
+}
+
+
 /* Media query for mobile devices up to 768px */
 @media (max-width: 768px) {
   .main {
@@ -182,6 +226,15 @@
     padding: 10px 15px;
     margin-top: 10px;
   }
+  .dealsItem li {
+    margin: 0 5px;
+    font-size: 10px; 
+  }
+  .dealsItem .icon {
+    font-size: 40px;
+    color: #616161;
+    margin-bottom: 5px;
+  }
 }
 /* Media query for tablets and smaller laptops (max-width: 1200px) */
 @media (max-width: 1200px) {
@@ -221,7 +274,7 @@
     margin: 15px 0;
   }
 }
-/* استایل‌های مخصوص برای صفحه‌نمایش‌های کمتر از 480px (مخصوص موبایل کوچک) */
+/*   480px (مخصوص موبایل کوچک) */
 @media (max-width: 480px) {
   .main {
     margin: 1px;
@@ -244,5 +297,14 @@
   .searchInput, .searchButton {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .dealsItem li {
+    margin: 0 5px;
+    font-size: 10px; 
+  }
+  .dealsItem .icon {
+    font-size: 40px;
+    color: #616161;
+    margin-bottom: 5px;
   }
 }

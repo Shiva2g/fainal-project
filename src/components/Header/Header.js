@@ -4,11 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import Styles from "./Header.module.css";
-import { useCart } from '../../context/CartContext'; // Import the useCart hook
-// import { signOut, signIn,  useSession } from "next-auth/react"; //auth
+import { useCart } from '../../context/CartContext'; 
+import { signOut, signIn,  useSession } from "next-auth/react"; //auth
 
 const Header = () => {
-//  const {data} = useSession();  //auth
+  const {data} = useSession();  //auth
   const { cart } = useCart(); // Use the useCart hook to get the cart
   const totalQuantity = cart?.reduce((total, item) => total + item.quantity, 0) || 0; // Calculate total quantity
 
@@ -32,30 +32,28 @@ const Header = () => {
           <div className={Styles.notification}>
           <Image src="/assets/images/icons/shopping_cart.png" className={Styles.shoppingCart} width={30} height={30} alt="Cart" /> 
           <div className={Styles.notificationCount}>
-          <span> {totalQuantity}</span> {/* Show quantity if greater than 0 */} 
+          <span> {totalQuantity}</span> {/* Show quantity  */} 
           </div>
-          </div>
-            
+          </div>  
           </Link> &nbsp;&nbsp;
-          <Link href="/signIn" passHref>
-            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" /> 
-            {/* {data && data.user ? ( 
-              <div className={Styles.userName}>
-                <p>{data.user.name}</p>
-              </div>
-            ) : null}
-          
-            {data ? (
-              <div>
-                <button className={Styles.btnSignOut} onClick={signOut}>Sign Out</button>
-              </div>
-              ) : (
-              <div>
-                <button className={Styles.btnLogin} onClick={signIn}>Login</button>
-              </div>
-                )} */}
 
-          </Link>
+          {/* <Link href="/signIn" passHref>
+            <Image src="/assets/images/icons/account.png" className={Styles.account} width={30} height={25} alt="Account" />  */}
+            
+            {/* ault  */}         
+            <div className={Styles.account}> 
+              {data ? (<div className={Styles.user_name}>
+              <span> {data.user.name}</span> &nbsp;
+              <Image className={Styles.accountImage} src={data.user.image} width={30} height={30} alt='profile picture' /> &nbsp;
+              <button onClick={() => signOut()}>Sign Out</button>
+              </div>
+              ) : (<div>
+              
+                <button onClick={() => signIn()}>Sign In</button>
+              </div>)}
+            </div>
+
+          {/* </Link> */}
         </div>
       </div>
 
@@ -70,15 +68,15 @@ const Header = () => {
           <li className={Styles.dropdown}>
             <Link href="/products">Products</Link>
             <div className={Styles.dropdownContent}>
-              <Link href="/search">Mobile & Accessories</Link>
+            <Link href={{pathname:'/search' , query:{productType:'mobile'}}}> Mobile & Accessories</Link>
               <hr />
-              <Link href="/search">Laptops & Accessories</Link>
+              <Link href={{pathname:'/search' , query:{productType:'laptop'}}}>Laptops & Accessories</Link>
               <hr />
-              <Link href="/search">Cameras & Photography</Link>
+              <Link href={{pathname:'/search' , query:{productType:'camera'}}}>Cameras & Photography</Link>
               <hr />
-              <Link href="/search">Gaming Consoles</Link>
+              <Link href={{pathname:'/search' , query:{productType:'Gaming'}}}>Gaming Consoles</Link>
               <hr />
-              <Link href="/search">HeadPhone</Link>
+              <Link href={{pathname:'/search' , query:{productType:'headphone'}}}>HeadPhone</Link>
             </div>
           </li>
           <li><Link href="/compare">Compare & Analyze</Link></li>

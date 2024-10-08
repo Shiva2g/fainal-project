@@ -32,6 +32,7 @@
 
 .myLogo:hover {
   height: 36px;
+  width: auto;
 }
 
 /* middle-header */
@@ -94,13 +95,19 @@
 
 /* left side-header */
 .headerIcons {
-  width: 160px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-left: 10px;
   margin-right: 30px;
   flex-shrink: 0;
+}
+.headerIcons button {
+  background-color: #014aca;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 .headerIcons a {
@@ -116,12 +123,22 @@
   height: 30px;
 }
 .account {
+  display: flex;
+  justify-content: center;
   padding-right: 2px;
   margin-left: 5px;
-  width: 30px;
+  width: auto;
   height: 26px;
+  align-items: center;
+}
+.account span {
+display: inline-block;
+text-align: center;
 }
 
+.accountImage {
+  border-radius: 25px;
+}
 .headerIcons a:hover {
   color: #edfe82;
   font-weight: 500;
@@ -225,6 +242,11 @@
     align-items: center;
     height: 35px;
   }
+  .myLogo:hover {
+    height: 18px;
+    width: auto;
+  }
+  
   
   /* right-header */
   .logo {
@@ -262,6 +284,10 @@
     width: 150px;
     margin-left: 2px;
     margin-right: 5px;
+    font-size: 10px;
+  }
+  .headerIcons button {
+    font-size: 10px;
   }
   /* nav bar */
   .nav {
@@ -286,6 +312,11 @@
     align-items: center;
     height: 35px;
   }
+  .myLogo:hover {
+    height: 18px;
+    width: auto;
+  }
+  
   
   /* right-header */
   .logo {
@@ -323,6 +354,7 @@
     width: 150px;
     margin-left: 2px;
     margin-right: 5px;
+    font-size: 10px;
   }
   /* nav bar */
   .nav {
@@ -335,6 +367,9 @@
   .nav ul li a {
     font-size: 12px;
     padding: 2px 2px;
+  }
+  .headerIcons button {
+    font-size: 10px;
   }
 
 }

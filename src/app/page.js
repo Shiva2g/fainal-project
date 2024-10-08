@@ -11,11 +11,11 @@ import { useEffect, useState, useContext  } from 'react';
 
 import db from "./db/firestore";
 import { getDocs, collection } from 'firebase/firestore';
-import { signOut, signIn,  useSession } from "next-auth/react"; //auth
+import { useSession } from "next-auth/react"; 
 
 
 export default function Home () {
-  const {data} = useSession();  //auth
+  
   
   const [productData, setProductData] = useState([]); //db
   
@@ -65,28 +65,20 @@ export default function Home () {
             <div className={styles.productGrid}>
               {productData.map(doc => (
                   <ItemBox 
-                    key={doc.id} 
-                    name={doc.name} 
-                    description={doc.description} 
-                    price={doc.Price} 
-                    image={doc.image} 
+                  name={doc.name} 
+                  description={doc.description} 
+                  price={doc.Price} 
+                  image={doc.image}
+                  imageTwo={doc.image2}
+                  imageThree={doc.image3}
+                  imageFour={doc.image4}
+                  store={doc.Store} 
                   />
                 ))}
             </div>
           </section>
 
-            {/* ault  */}         
-            <div> 
-            {data ? (<div>
-            <p>Welcome, {data.user.name}</p>
-            <Image src={data.user.image} width={100} height={100} alt='profile picture' />
-            <button onClick={() => signOut()}>Sign out</button>
-            </div>
-            ) : (<div>
             
-              <button onClick={() => signIn()}>Sign in</button>
-            </div>)}
-            </div>
             
         </main>
     

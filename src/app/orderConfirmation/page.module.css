@@ -1,29 +1,93 @@
 .main {
-  margin: 10em;
-  font-size: 14px;
+  padding: 20px;
 }
 
 .orderConfirmationContainer {
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
   background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .orderSummary {
   margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
-}
-.inputform [type="text"] {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
+.productRow {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.paymentForm {
+  margin : 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.paymentMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paymentLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.paymentLabel:hover {
+  background-color: #f0f0f0;
+}
+
+.paymentInput {
+  display: block;
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.shippingInfo input {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.confirmButton {
+  background-color: #eceeec;
+  padding: 10px 20px;
+  border: 1px solid #0501b8;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: #c3ecc5;
+}
+
+.confirmationMessage {
+  margin-top: 20px;
+  color: #319d4e;
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
