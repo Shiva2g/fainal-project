@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'; 
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import Link from 'next/link';
 
 const images = [
   "/assets/images/products/hero-img2.png", //  image
@@ -58,8 +59,8 @@ const Hero = () => {
             Save up to $300 on select Products.
           </div>
           <div className={styles.shopButtons}>
-            <button className={styles.shopNow}>Shop Now</button>
-            <button className={styles.shopAll}>Details</button>
+          <Link href="/products"><button className={styles.shopNow}>Shop Now</button></Link>
+            {/* <button className={styles.shopAll}>Details</button> */}
           </div>
         </div>
         <div className={styles.heroImage}>
