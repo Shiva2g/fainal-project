@@ -38,7 +38,7 @@ const Hero = () => {
    useEffect(() => {
     const interval = setInterval(() => {
       handleNextImage();
-    }, 4000); // عوض شدن تصویر هر ۴ ثانیه
+    }, 4000); // changing picture after 4s     
 
     return () => clearInterval(interval); // پاک کردن interval هنگام unmount
   }, []);
